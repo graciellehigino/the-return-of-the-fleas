@@ -188,15 +188,14 @@ occupies a more particular environmental space. Maybe the communities that are
 more different in the PCDc clusters are gathered in the PCDp because/if they are
 spacially more isolated. --->
 
-![](figures/fig1.png){#fig:one}  
-@fig:one - Principal Component Analysis of networks betadiversity metrics and
+![Principal Component Analysis of networks betadiversity metrics and
 projection of local networks. For the dataset used here, networks are clearly
 described by three dimensions of betadiversity: while $\beta$s captures part of the
 variation that is complementary to that captured by $\beta$wn, $\beta$os describes a
 completly different dimension of the data. (A) PCA of networks betadiversity
 metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic component of PCD (PCDp)
 for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
-for fleas (D) and rodents (E).
+for fleas (D) and rodents (E).](figures/fig1.png){#fig:one}  
 
 #### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).
 As expected, _$\beta$s_ and PCDc are proxies for each other both for hosts and
@@ -214,7 +213,7 @@ _$\beta$s_ is also positively correlated with PCDp (@fig:twoB). Communities with
 values for any of those metrics are located in regions with expected higher
 biodiversity (Fig. 3A and Fig. 3B), and this may indicate that the
 biogeographical history of these communities are more related to migration than
-diversification of local lineages (@Davies2011PhyDiv). Therefore, networks with
+diversification of local lineages [@Davies2011PhyDiv]. Therefore, networks with
 high PCDp also represent communities with lower ecological redundancy and higher
 functional diversity because it indicates that the species turnover is happening
 between species phylogenetically distant.
@@ -244,7 +243,9 @@ group of networks that frequently exchange species between them, but rarely do
 so with more distant communities.
 
 ![](figures/fig2A.png){#fig:twoA}  
+
 ![](figures/fig2B.png){#fig:twoB}  
+
 Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
 phylogenetic diversity dissimilarity on network betadiversity for both parasites
 and hosts. The colours correspond to the groups described on @fig:one. Networks
