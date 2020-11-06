@@ -2,68 +2,326 @@
 bibliography: [references.bib]
 ---
 
-This template uses recent versions of `pandoc` and `pandoc-crossref` to
-faciltate the referencing of equations, figures, and tables within the text. For
-example, the following equation
+## Introduction
 
-$$J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \times \text{log}(p)\right)$$ {#eq:eq1}
+Ecological networks are complex units that incorporate many aspects of the
+biodiversity multidimensional fabric, such as species identity, connections
+between them and their evolutive history. Because of that, investigating the
+biodiversity and the biogeography of communities through species interactions
+can be highly informative. A local network carries biogeographical and
+historical characteristics of the regional pool of species and interactions,
+given that it is a subset of a regional metaweb (@Holt2002FooWeb). However, some
+of these characteristics (such as the phylogenetic signal of interactions) can
+be lost or modified in different ways due to the environmental filtering that
+occurs in the community formation process, resulting in a non-correlative
+variation of ecological networks components (@Poisot2018IntRet;
+@Poisot2016StrPro).
 
-is produced using
+The differences between communities related to interactions may be, but not
+necessarily are, correspondent to those related to their species composition
+(@Poisot2014SpeWhy). For instance, the probability of interaction may be
+modified by environmental changes that affect the metabolic rate of organisms
+(@Rall2012UniTem), by changes in their habitats (@Tylianakis2017EcoNet) or by
+community's phylogenetic structure (@Coelho2017NeuBio) – which, in turn, varies
+with the abundance and specialization of species involved
+(@Tylianakis2017EcoNet). Additionally, environmental conditions also have direct
+effects over the reproductive success of species, changing their populational
+parameters (such as birth and death rates). In this sense, environmental
+gradients can change the frequency of interactions through direct influence on
+species' characteristics and population abundance, which, on the other hand, are
+also affected by interactions (@Poisot2016StrPro). For example, pathogens can
+develop adaptations that protect them from the immune system of their hosts (an
+example of the effect of an interaction over species' characteristics), or a
+predator can elevate the death rate of its prey population, therefore altering
+its abundance (an example of the effect of an interaction over populations'
+characteristics). Other examples are the effect of the environment on the
+production of secondary metabolites that exert selective pressure on the
+organisms that interact with certain plants (@Muola2010AssPla), how the
+geographical variation of functional characteristics generates changes in the
+interaction network and in species composition (@Konig2014ConRes;
+@CHAMuha2015EmpRes), as well as the substitution of species along environmental
+gradients, variation in reproductive success and in the trophic network, or,
+yet, how the population density regulated by the environment can change the sign
+of an interaction (@Bruder2017BioInt; @Doxford2013SpaTem; @Kaplan2005AphAlt).
+All these factors contribute to the fact that the differences between
+interactions are more prone to variability and are always equal or greater than
+the differences in species composition, and, therefore, are more informative
+than the number of species or functional diversity alone (@Poisot2017HosPar).
 
-~~~latex
-$$J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \times \text{log}(p)\right)$$ {#eq:eq1}
-~~~
+As well as several other biodiversity metrics, the indexes that measure
+characteristics of ecological networks can also respond to environmental
+gradients in space and time. For example, the speed of climate change can reduce
+modularity (how much a network is partitioned into nuclei of closely connected
+species) and increase nestedness (how much specialist species interact with a
+subset of species with which generalists interact) in pollination networks
+(@Dalsgaard2013HisCli). One of these indices that carries important historical
+information is the phylogenetic diversity, measured as the sum of the lengths of
+the phylogeny branches that include all the species that interact in a
+community. Dispersion and speciation events are the main factors that affect the
+phylogenetic diversity of a network of ecological interactions
+(@Coelho2017NeuBio; @Sebastian-Gonzalez2015MacTre; @Trojelsgaard2013MacPol).
+Moreover, phylogenetic diversity is very sensitive to addition of species and
+may indicate, for example, the extent of impacts caused by an invasive species
+in a community (@Davies2011PhyDiv). Therefore, beta diversity (the difference in
+the composition of communities) and the phylogenetic diversity of interaction
+networks are related, and both can respond to environmental variation in
+different ways. For example, by acting as an "environmental filter", the
+environment can affect the substitution of species by selecting their functional
+characteristics, and these, in turn, can limit the impacts of environmental
+conditions in substituting interactions (@Carnicer2009TemDyn), suggesting that
+functional diversity also plays an important role in the stability of ecological
+networks. Investigating the relationship between these characteristics can help
+us understand why ecological networks vary in space, and how they can respond to
+different environmental gradients.
 
-and can be referenced using `@eq:eq1`, which will result in @eq:eq1.
+Interaction networks between parasites and hosts have great potential to be used
+as study systems in the geographic variation of interactions, especially those
+involving ectoparasites. Because of the particular type of association between
+parasites and hosts, the dissimilarity of these interactions networks reflect
+not only the environmental differences, but also the replacement of the host
+species (@Eriksson2019HosEnv; @Krasnov2005SpaVar; @Poulin2010SimVar).
+Nonetheless, the association between parasites and hosts is often the result of
+the evolutionary history of the groups, and this history can result in a
+non-neutral contribution of these species to the beta diversity of these
+communities (@Poisot2012DisSpe). Based on a parasite-host system distributed
+over a vast biogeographic region, we identified similar numerical and
+geographical associations between the phylogenetic diversity and the
+dissimilarity of species composition and interactions of ecological networks.
+This result adds to our previous understanding of biodiversity distribution and
+help us tell a more complete story on the biogeography of ecological
+communities.
 
-All documents will be deployed to `gh-pages` *only* on push events from the `master`
-All of the artifacts will be built when doing pull requests, so you can check that
-merging a branch is *not* going to cause the compilation of the documents to fail.
+## Methods
 
-# Using references
+We used the Hadfield et al. (-@Hadfield2014-tw) data on the parasitism
+interaction between Soricomorpha and Rodentia in 51 regions of the Palearctic to
+investigate how betadiversity of networks and phylogenetic diversity are
+related. This publication gathers occurrence records of 536,000 mammal
+individuals of 121 species, 1,692,000 individuals from 206 flea species that
+occurred in those mammals, and the interactions between them
+(@Hadfield2013DatTal). Original data is available at Data Dryad
+(<http://dx.doi.org/10.5061/dryad.jf3tj>) and interaction data is available at
+`mangal` database (<http://mangal.io>; @Poisot2016ManMak).
 
-The references are managed by the `citeproc` filter for `pandoc`. Note that we
-*do not* use `pandoc-citeproc`, which was an external moduler for older `pandoc`
-versions. References *have to* be stored in a `references.bib` file. We use
-[Zotero](https://www.zotero.org/) for references management, and for the lab's
-manuscripts, we work from folders in a shared library (with a folder for every
-manuscript).
+The authors also used molecular and morphological traits of species to retrieve
+the phylogenetic relationships between species. We used the resulting trees to
+measure the phylogenetic community dissimilarity (PCD) of both hosts and
+parasites metacommunities using the function `pcd` of the package `phyr`, in R
+(Li2020.02.17.952317; R_Core_Team2019-yl). To do that, we discarded sites with
+no correspondents taxa in the phylogenetic trees.<!--only one site was
+discarded: the network #22 had no correspondents on hosts tree--> The output of
+the `pcd` function can be divided in compositional (PCDc) and phylogenetic
+(PCDp) aspects of beta-diversity, which were summarized through a Principal
+Component Analysis (PCA) and grouped by their own *kmeans* for both parasites
+and hosts.
 
+Networks beta-diversity indexes are composed by their characteristics on species
+composition and interactions both on local and regional networks
+(@Poisot2012DisSpe). Here we assessed three indexes that summarize these
+information in different ways:
+1. *βs*: this index corresponds to the differences on species composition
+between networks. A high βs means solely a high species turnover
+(@Koleff2003MeaBetMeaBet).
+2. *βos*: this index represents the differences on interactions between shared
+species. It is the component of networks dissimilarity only related to
+interactions, not species identity (@Canard2014EmpEva).
+3. *βwn*: this summarizes the global differences between all networks in a
+metaweb. It has two components: the difference in interactions between shared
+species (*βos*) and the difference in interactions due to species turnover
+(@Canard2014EmpEva). Therefore, *βos* can not assume values higher than *βwn*.
 
-We use the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) plugin for
-citation key generations, and auto-export of the shared library to the
-`references.bib` file. We use a citation key format meant to convey information
-on the author, date, year, and title. It must be set in the Better BibTeX
-preferences as
+These measures were calculated using the `EcologicalNetworks.jl` and `mangal.jl`
+modules in Julia (@Poisot2019EcoNet; @Bezanson2017JulFre) and summarized with
+the `KGL11` function, which calculates the Sørensen index of beta-diversity
+(@Koleff2003MeaBet). *βs* was the only metric calculated separately for hosts
+and parasites because it represents their taxonomic diversities. The
+dissimilarity matrices resulting from this analysis represented, therefore, the
+differences between networks considering each of the indexes described above. In
+order to use these matrices on the following analyses as a single variable, we
+performed a PCA on each matrix and selected the first component of each. A
+subsequent PCA and *kmeans* analysis on a combined matrix of these variables
+allowed us to investigate how they co-vary among networks. All analyses are
+available at [HERE].
 
-~~~
-[auth:fold][year][title:fold:nopunctordash:skipwords:lower:select=1,1:substring=1,3:capitalize][title:fold:nopunctordash:skipwords:lower:select=2,2:substring=1,3:capitalize]
-~~~
+## Results
 
-The citations are done using normal markdown, where `@Elton1927AniEco` produces
-@Elton1927AniEco, and `[@Camerano1880EquViv]` produces [@Camerano1880EquViv].
+#### Communities can be clearly grouped according to network betadiversity.
+The dissimilarity of networks is not described in the same way for local
+networks across a metacommunity. Because of particular characteristics such as
+communities' species composition and relationship with local environment, the
+differences in ecological networks can be due to species turnover, links
+established by shared species or a combination of both. In our case these
+differences were very prominent, making it possible to group communities by
+their interactions dissimilarity decomposition.
 
-# Tables
+The first two axes of the Principal Component Analysis performed on the network
+beta-diversity indexes, which explain 95.5% of the variation of the data,
+separates the 50 networks (those with corresponding species in the phylogenetic
+trees) in those that have more similar *βs*, *βos* and *βwn* values (@fig:one).
+This separation is more explicit between *βs* and *βwn*, and more diffuse for
+*βos*, which is aligned to the assumption that *βs* and *βwn* are only
+indirectly related, while *βos* have a more proximate relationship both with
+*βwn* and *βs*. The fact that the networks grouped by *βs* values are so
+different from those grouped by *βwn* may suggest that the turnover of species
+in the first group causes loss of links, while in the former group this turnover
+is translated into new connections. The _βos_ group, however, would be composed
+by communities that change less in species composition, but more in ecological
+interactions.  
 
-Tables are supported in their normal markdown way:
+Because *βs* and the species composition of the phylogenetic community
+dissimilarity (PCDc) can be interpreted in the same way, a Principal Component
+Analysis of PCDc would provide a closer look to the *βs* metric. Our results
+suggest that, from a species composition point of view, hosts communities can be
+described in three main groups, while parasites communities are much more
+similar across the metaweb (@fig:one D and @fig:one E). The diversity of fleas
+can be much more uniform in space because it is common that a single host
+interacts with more than one species of parasites. In this particular case, only
+a few fleas communities have a distinguished species composition and can be
+grouped together.  
 
-| Column 1 | Column 2 | Column 3 |
-|----------|---------:|:--------:|
-| c1       |       c2 |    c3    |
-| c2       |       c3 |    c4    |
-| c5       |       c6 |    c7    |
+However, the phylogenetic component of PCD (PCDp) reveals a much more structured
+metacommunity both in hosts and parasites. In fact, they seemed to be grouped in
+the same way, with two groups more similar than a third one. This may be a
+reflex of the biogeographic history of communities, where one group is more
+primitive than the other two. <!--- I wonder if the more distinguished group
+occupies a more particular environmental space. Maybe the communities that are
+more different in the PCDc clusters are gathered in the PCDp because/if they are
+spacially more isolated. --->
 
-# Figures
+![](/figs/fig1.png){#fig:one}  
+@fig:one - Principal Component Analysis of networks betadiversity metrics and
+projection of local networks. For the dataset used here, networks are clearly
+described by three dimensions of betadiversity: while βs captures part of the
+variation that is complementary to that captured by βwn, βos describes a
+completly different dimension of the data. (A) PCA of networks betadiversity
+metrics _βs_, _βwn_ and _βos_; PCA of the phylogenetic component of PCD (PCDp)
+for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
+for fleas (D) and rodents (E).
 
-Figures can have a legend -- all figures *must* be in the `figures/` folder of
-the project:
+#### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).
+As expected, _βs_ and PCDc are proxies for each other both for hosts and
+parasites, while PCDc is inversely correlated with _βwn_ (@fig:twoA).
+Communities with a high _βs_ value are very different from those around them,
+and the change in species composition could also represent a shift in the links
+inside these networks either becausen new species will probably explore
+different ranges of ecological niche or because the loss of species would also
+represent a loss of interaction. These changes in links inside networks are
+represented by _βos_, and its relationship with both PCDc and PCDp is highly
+variable (Fig. 2B and Fig. 3B).  
 
-~~~
-![This is the legend of the figure](figures/biomes.png){#fig:biomes}
-~~~
+Because any change in species composition highly affects phylogenetic diversity,
+_βs_ is also positively correlated with PCDp (@fig:twoB). Communities with high
+values for any of those metrics are located in regions with expected higher
+biodiversity (Fig. 3A and Fig. 3B), and this may indicate that the
+biogeographical history of these communities are more related to migration than
+diversification of local lineages (@Davies2011PhyDiv). Therefore, networks with
+high PCDp also represent communities with lower ecological redundancy and higher
+functional diversity because it indicates that the species turnover is happening
+between species phylogenetically distant.
 
-![This is the legend of the figure](figures/biomes.png){#fig:biomes}
+On the other hand, networks that are better represented by *βwn* - i.e., those
+which differences between them are significantly smaller than the differences in
+relation to the metaweb - are also phylogenetically similar, varying always
+inside a limited range of small dissimilarity (both with PCDc and PCDp). Because
+these communities also have low values of *βs*, indicating less frequent species
+turnover, this dissimilarity is due to different links between shared species.
+This result may reflect two possible scenarios:
+1. In similar communities with low phylogenetic diversity (shorter branch
+lengths) the turnover of species could be adding very ecologically similar
+lineages, which leads to different interactions to prevent local extinction
+through competition.
+2. In similar communities with high phylogenetic diversity (longer branch
+lengths) the species turnover may have been a result of invasion and migration,
+which may lead to opportunistic interactions.
 
-We can now use `@fig:biomes` to refer to @fig:biomes.
+This is also illustrated in Figures @fig:twoA and @fig:twoB on scatterplots of
+*βos* vs. PCD: networks that differ little in phylogenies have a broader range
+of values of *βos*, while highly phylogenetically distinct newtorks only have
+very low values of *βos*. This means that the few species that are shared
+interact in the same way, and because those same communities also have low
+values of *βwn* and high values of *βs*, they are probably a somewhat isolated
+group of networks that frequently exchange species between them, but rarely do
+so with more distant communities.
 
-# References
+![](/figs/fig2A.png){#fig:twoA}  
+![](/figs/fig2B.png){#fig:twoB}  
+Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
+phylogenetic diversity dissimilarity on network betadiversity for both parasites
+and hosts. The colours correspond to the groups described on @fig:one. Networks
+with higher values of PCDp are phylogenetically more distinct, have more unique
+sets of species and therefore have lower values of *βos* (because they do not
+share many species). Networks better represented by *βwn* and *βos* are less
+distinguished on this aspect, but usually have lower values of PCDp.
+
+#### The separation of communities by components of beta-diversity was also observed geographically
+There is a clear gradual transition between networks that were better described
+by turnover of species, clustered in central south Eurasia, to those more unique
+compared to the metaweb, spread in the north (@fig:threeA). The regional species
+pool is expected to be more diverse towards the Equator, and therefore local
+networks have a higher chance to have different species composition, which
+results in a strong contribution of *βs* for networks betadiversity. Because of
+the high diversity, species are functionally "packed", and although some species
+could have more generalist interactions, they would rarely do so, in order to
+avoid competition. Heading north, species turnover would be less frequent due to
+a decrease in regional species richness, and now networks have more shared
+species. They start to "unpack" and establish interactions with other remaining
+species, and therefore the *βos* component of betadiversity explains better why
+networks are different. The third group of networks, characterized by a high
+value of *βwn*, is also composed by phylogenetically similar communities (as
+seen in @fig:twoB). Because the species richness is even lower, any change in
+composition can have a high impact on interactions. Therefore, the *βos*
+component is still very important, but now differences in interactions due to
+species turnover contribute much more to networks' betadiversity.
+
+The phylogenetic community dissimilarity of networks was also geographically
+grouped, and in the region where *βs* was more important, there was a very
+distinguished group for both fleas' and rodents' phylogenetic dissimilarity
+(@fig:threeB). The two other groups are differently arranged in space: PCDc
+groups have a similar latitudinal distribution, but different longitudinal
+ranges, while PCDp groups are the opposite. This distribution of phylogenetic
+groups highlight the uniqueness of the southern-central set of communities,
+which suggests historical isolation of species. Additionally, the purely
+phylogenetic component of PCD reinforces the geographic distribution of
+betadiversity metrics as seen in @fig:threeA, with one group largely spread in
+the north - occupying a diverse range of environments - and two other groups
+restricted to latitudes under 60° (@fig:threeB).
+
+![](/figs/fig3A.png){#fig:threeA}  
+![](/figs/fig3B.png){#fig:threeB}  
+Fig 03 - Spatial distribution of beta-diversity metrics (A) and PCD components
+(B). Again, a distinct PCDc cluster (as seen on the third map of the left
+column) matches the cluster for which *βs* metric is more important.
+
+## Conclusion
+The conspicuous association - both numerical and geographical - between the
+evolutive history of species and networks' betadiversity properties clarifies
+important aspects of the biogeography of hosts and parasites communities in
+Eurasia. For example, the longitudinal PCDc clusters separation roughly coincide
+with the presence of the Ural Mountains. From this point of view, considering
+the longitudinal spread of PCDp, the history of both hosts and parasites seems
+to have a clear path of migration and diversification from south-central Eurasia
+towards the north. This history is also sustained by the metaweb betadiversity
+metrics: even though the Ural Mountains do not play the same part as for PCDc,
+they sum up to the information unveiled by PCDp to describe a very likely
+biogeographic history.
+
+By describing how the phylogenetic differences between networks vary in the same
+way within groups, this result seems to reinforce previous findings that there
+is no co-phylogenetic matching between regional and local networks
+(@Poisot2018IntReta). If networks co-varied in continental scale in the same way
+they co-vary in local scale, our analyses would not detect the groups
+illustrated in @fig:threeB.
+
+Finally, this paper highlights how betadiversity and phylogenetic dissimilarity
+are related to each other, and sheds light on the possibility that they interact
+with the environment in different ways. While *βs* seems to be connected to
+environmental uniqueness and geographical barriers, *βos* and *βwn* better
+reflect migration processes and evolutive trajectories. As stated at the
+beginning of this text, ecological networks are valuable, multidimensional
+lenses through which we can investigate biodiversity and its history. Although
+we did not account for properties such as phenology and natural history aspects
+of species, we did find that small scale processes such as species interactions
+can be integrated in large scale investigations and can have a stamp in
+macroecological processes.
+
+## References
