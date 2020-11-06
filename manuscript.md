@@ -188,7 +188,7 @@ occupies a more particular environmental space. Maybe the communities that are
 more different in the PCDc clusters are gathered in the PCDp because/if they are
 spacially more isolated. --->
 
-![](/figs/fig1.png){#fig:one}  
+![](/figures/fig1.png){#fig:one}  
 @fig:one - Principal Component Analysis of networks betadiversity metrics and
 projection of local networks. For the dataset used here, networks are clearly
 described by three dimensions of betadiversity: while βs captures part of the
@@ -243,8 +243,8 @@ values of *βwn* and high values of *βs*, they are probably a somewhat isolated
 group of networks that frequently exchange species between them, but rarely do
 so with more distant communities.
 
-![](/figs/fig2A.png){#fig:twoA}  
-![](/figs/fig2B.png){#fig:twoB}  
+![](/figures/fig2A.png){#fig:twoA}  
+![](/figures/fig2B.png){#fig:twoB}  
 Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
 phylogenetic diversity dissimilarity on network betadiversity for both parasites
 and hosts. The colours correspond to the groups described on @fig:one. Networks
@@ -286,8 +286,8 @@ betadiversity metrics as seen in @fig:threeA, with one group largely spread in
 the north - occupying a diverse range of environments - and two other groups
 restricted to latitudes under 60° (@fig:threeB).
 
-![](/figs/fig3A.png){#fig:threeA}  
-![](/figs/fig3B.png){#fig:threeB}  
+![](/figures/fig3A.png){#fig:threeA}  
+![](/figures/fig3B.png){#fig:threeB}  
 Fig 03 - Spatial distribution of beta-diversity metrics (A) and PCD components
 (B). Again, a distinct PCDc cluster (as seen on the third map of the left
 column) matches the cluster for which *βs* metric is more important.
