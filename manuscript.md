@@ -119,21 +119,21 @@ Networks beta-diversity indexes are composed by their characteristics on species
 composition and interactions both on local and regional networks
 (@Poisot2012DisSpe). Here we assessed three indexes that summarize these
 information in different ways:
-1. *βs*: this index corresponds to the differences on species composition
-between networks. A high βs means solely a high species turnover
+1. *$\beta$s*: this index corresponds to the differences on species composition
+between networks. A high $\beta$s means solely a high species turnover
 (@Koleff2003MeaBetMeaBet).
-2. *βos*: this index represents the differences on interactions between shared
+2. *$\beta$os*: this index represents the differences on interactions between shared
 species. It is the component of networks dissimilarity only related to
 interactions, not species identity (@Canard2014EmpEva).
-3. *βwn*: this summarizes the global differences between all networks in a
+3. *$\beta$wn*: this summarizes the global differences between all networks in a
 metaweb. It has two components: the difference in interactions between shared
-species (*βos*) and the difference in interactions due to species turnover
-(@Canard2014EmpEva). Therefore, *βos* can not assume values higher than *βwn*.
+species (*$\beta$os*) and the difference in interactions due to species turnover
+(@Canard2014EmpEva). Therefore, *$\beta$os* can not assume values higher than *$\beta$wn*.
 
 These measures were calculated using the `EcologicalNetworks.jl` and `mangal.jl`
 modules in Julia (@Poisot2019EcoNet; @Bezanson2017JulFre) and summarized with
 the `KGL11` function, which calculates the Sørensen index of beta-diversity
-(@Koleff2003MeaBet). *βs* was the only metric calculated separately for hosts
+(@Koleff2003MeaBet). *$\beta$s* was the only metric calculated separately for hosts
 and parasites because it represents their taxonomic diversities. The
 dissimilarity matrices resulting from this analysis represented, therefore, the
 differences between networks considering each of the indexes described above. In
@@ -157,20 +157,20 @@ their interactions dissimilarity decomposition.
 The first two axes of the Principal Component Analysis performed on the network
 beta-diversity indexes, which explain 95.5% of the variation of the data,
 separates the 50 networks (those with corresponding species in the phylogenetic
-trees) in those that have more similar *βs*, *βos* and *βwn* values (@fig:one).
-This separation is more explicit between *βs* and *βwn*, and more diffuse for
-*βos*, which is aligned to the assumption that *βs* and *βwn* are only
-indirectly related, while *βos* have a more proximate relationship both with
-*βwn* and *βs*. The fact that the networks grouped by *βs* values are so
-different from those grouped by *βwn* may suggest that the turnover of species
+trees) in those that have more similar *$\beta$s*, *$\beta$os* and *$\beta$wn* values (@fig:one).
+This separation is more explicit between *$\beta$s* and *$\beta$wn*, and more diffuse for
+*$\beta$os*, which is aligned to the assumption that *$\beta$s* and *$\beta$wn* are only
+indirectly related, while *$\beta$os* have a more proximate relationship both with
+*$\beta$wn* and *$\beta$s*. The fact that the networks grouped by *$\beta$s* values are so
+different from those grouped by *$\beta$wn* may suggest that the turnover of species
 in the first group causes loss of links, while in the former group this turnover
-is translated into new connections. The _βos_ group, however, would be composed
+is translated into new connections. The _$\beta$os_ group, however, would be composed
 by communities that change less in species composition, but more in ecological
 interactions.  
 
-Because *βs* and the species composition of the phylogenetic community
+Because *$\beta$s* and the species composition of the phylogenetic community
 dissimilarity (PCDc) can be interpreted in the same way, a Principal Component
-Analysis of PCDc would provide a closer look to the *βs* metric. Our results
+Analysis of PCDc would provide a closer look to the *$\beta$s* metric. Our results
 suggest that, from a species composition point of view, hosts communities can be
 described in three main groups, while parasites communities are much more
 similar across the metaweb (@fig:one D and @fig:one E). The diversity of fleas
@@ -191,26 +191,26 @@ spacially more isolated. --->
 ![](/figures/fig1.png){#fig:one}  
 @fig:one - Principal Component Analysis of networks betadiversity metrics and
 projection of local networks. For the dataset used here, networks are clearly
-described by three dimensions of betadiversity: while βs captures part of the
-variation that is complementary to that captured by βwn, βos describes a
+described by three dimensions of betadiversity: while $\beta$s captures part of the
+variation that is complementary to that captured by $\beta$wn, $\beta$os describes a
 completly different dimension of the data. (A) PCA of networks betadiversity
-metrics _βs_, _βwn_ and _βos_; PCA of the phylogenetic component of PCD (PCDp)
+metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic component of PCD (PCDp)
 for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
 for fleas (D) and rodents (E).
 
 #### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).
-As expected, _βs_ and PCDc are proxies for each other both for hosts and
-parasites, while PCDc is inversely correlated with _βwn_ (@fig:twoA).
-Communities with a high _βs_ value are very different from those around them,
+As expected, _$\beta$s_ and PCDc are proxies for each other both for hosts and
+parasites, while PCDc is inversely correlated with _$\beta$wn_ (@fig:twoA).
+Communities with a high _$\beta$s_ value are very different from those around them,
 and the change in species composition could also represent a shift in the links
 inside these networks either becausen new species will probably explore
 different ranges of ecological niche or because the loss of species would also
 represent a loss of interaction. These changes in links inside networks are
-represented by _βos_, and its relationship with both PCDc and PCDp is highly
+represented by _$\beta$os_, and its relationship with both PCDc and PCDp is highly
 variable (Fig. 2B and Fig. 3B).  
 
 Because any change in species composition highly affects phylogenetic diversity,
-_βs_ is also positively correlated with PCDp (@fig:twoB). Communities with high
+_$\beta$s_ is also positively correlated with PCDp (@fig:twoB). Communities with high
 values for any of those metrics are located in regions with expected higher
 biodiversity (Fig. 3A and Fig. 3B), and this may indicate that the
 biogeographical history of these communities are more related to migration than
@@ -219,11 +219,11 @@ high PCDp also represent communities with lower ecological redundancy and higher
 functional diversity because it indicates that the species turnover is happening
 between species phylogenetically distant.
 
-On the other hand, networks that are better represented by *βwn* - i.e., those
+On the other hand, networks that are better represented by *$\beta$wn* - i.e., those
 which differences between them are significantly smaller than the differences in
 relation to the metaweb - are also phylogenetically similar, varying always
 inside a limited range of small dissimilarity (both with PCDc and PCDp). Because
-these communities also have low values of *βs*, indicating less frequent species
+these communities also have low values of *$\beta$s*, indicating less frequent species
 turnover, this dissimilarity is due to different links between shared species.
 This result may reflect two possible scenarios:
 1. In similar communities with low phylogenetic diversity (shorter branch
@@ -235,11 +235,11 @@ lengths) the species turnover may have been a result of invasion and migration,
 which may lead to opportunistic interactions.
 
 This is also illustrated in Figures @fig:twoA and @fig:twoB on scatterplots of
-*βos* vs. PCD: networks that differ little in phylogenies have a broader range
-of values of *βos*, while highly phylogenetically distinct newtorks only have
-very low values of *βos*. This means that the few species that are shared
+*$\beta$os* vs. PCD: networks that differ little in phylogenies have a broader range
+of values of *$\beta$os*, while highly phylogenetically distinct newtorks only have
+very low values of *$\beta$os*. This means that the few species that are shared
 interact in the same way, and because those same communities also have low
-values of *βwn* and high values of *βs*, they are probably a somewhat isolated
+values of *$\beta$wn* and high values of *$\beta$s*, they are probably a somewhat isolated
 group of networks that frequently exchange species between them, but rarely do
 so with more distant communities.
 
@@ -249,8 +249,8 @@ Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
 phylogenetic diversity dissimilarity on network betadiversity for both parasites
 and hosts. The colours correspond to the groups described on @fig:one. Networks
 with higher values of PCDp are phylogenetically more distinct, have more unique
-sets of species and therefore have lower values of *βos* (because they do not
-share many species). Networks better represented by *βwn* and *βos* are less
+sets of species and therefore have lower values of *$\beta$os* (because they do not
+share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less
 distinguished on this aspect, but usually have lower values of PCDp.
 
 #### The separation of communities by components of beta-diversity was also observed geographically
@@ -259,22 +259,22 @@ by turnover of species, clustered in central south Eurasia, to those more unique
 compared to the metaweb, spread in the north (@fig:threeA). The regional species
 pool is expected to be more diverse towards the Equator, and therefore local
 networks have a higher chance to have different species composition, which
-results in a strong contribution of *βs* for networks betadiversity. Because of
+results in a strong contribution of *$\beta$s* for networks betadiversity. Because of
 the high diversity, species are functionally "packed", and although some species
 could have more generalist interactions, they would rarely do so, in order to
 avoid competition. Heading north, species turnover would be less frequent due to
 a decrease in regional species richness, and now networks have more shared
 species. They start to "unpack" and establish interactions with other remaining
-species, and therefore the *βos* component of betadiversity explains better why
+species, and therefore the *$\beta$os* component of betadiversity explains better why
 networks are different. The third group of networks, characterized by a high
-value of *βwn*, is also composed by phylogenetically similar communities (as
+value of *$\beta$wn*, is also composed by phylogenetically similar communities (as
 seen in @fig:twoB). Because the species richness is even lower, any change in
-composition can have a high impact on interactions. Therefore, the *βos*
+composition can have a high impact on interactions. Therefore, the *$\beta$os*
 component is still very important, but now differences in interactions due to
 species turnover contribute much more to networks' betadiversity.
 
 The phylogenetic community dissimilarity of networks was also geographically
-grouped, and in the region where *βs* was more important, there was a very
+grouped, and in the region where *$\beta$s* was more important, there was a very
 distinguished group for both fleas' and rodents' phylogenetic dissimilarity
 (@fig:threeB). The two other groups are differently arranged in space: PCDc
 groups have a similar latitudinal distribution, but different longitudinal
@@ -290,7 +290,7 @@ restricted to latitudes under 60° (@fig:threeB).
 ![](/figures/fig3B.png){#fig:threeB}  
 Fig 03 - Spatial distribution of beta-diversity metrics (A) and PCD components
 (B). Again, a distinct PCDc cluster (as seen on the third map of the left
-column) matches the cluster for which *βs* metric is more important.
+column) matches the cluster for which *$\beta$s* metric is more important.
 
 ## Conclusion
 The conspicuous association - both numerical and geographical - between the
@@ -314,8 +314,8 @@ illustrated in @fig:threeB.
 
 Finally, this paper highlights how betadiversity and phylogenetic dissimilarity
 are related to each other, and sheds light on the possibility that they interact
-with the environment in different ways. While *βs* seems to be connected to
-environmental uniqueness and geographical barriers, *βos* and *βwn* better
+with the environment in different ways. While *$\beta$s* seems to be connected to
+environmental uniqueness and geographical barriers, *$\beta$os* and *$\beta$wn* better
 reflect migration processes and evolutive trajectories. As stated at the
 beginning of this text, ecological networks are valuable, multidimensional
 lenses through which we can investigate biodiversity and its history. Although
