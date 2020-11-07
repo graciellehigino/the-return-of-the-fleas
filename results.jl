@@ -1,3 +1,12 @@
+using Measures
+include("code.jl")
+pal = (
+  C1 = RGB(160/255,47/255,37/255),
+  C2 = RGB(230/255,159/255,0/255),
+  C3 = RGB(91/255, 135/255, 172/255)
+  )
+
+
 ### Fig 01 - PCA with groups of Networks
 
 #### Communities can be clearly grouped according to network betadiversity.
@@ -87,14 +96,7 @@
 ### Fig 02 - Panel wih 3 plots beta-diversity vs. PCD
 #### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).
 
-using Measures
-
 # Phylogenetic community dissimilarity vs. first components of each network dissimilarity components analysis
-pal = (
-  C1 = RGB(160/255,47/255,37/255),
-  C2 = RGB(230/255,159/255,0/255),
-  C3 = RGB(91/255, 135/255, 172/255)
-  )
 
 ## Species composition dissimilarity vs. first components of each network dissimilarity components analysis, colored by Betadiversity groups
 # Fleas PCDc and βs - kmeans of fleas pcdc
@@ -208,5 +210,4 @@ legend = Plots.plot([0 0], legendfont=18, color = [pal.C3 pal.C2], showaxis = fa
 title = plot(title = "(B) Spatial distribution of PCD components clusters for hosts and parasites", grid = false, showaxis = false, bottom_margin = -50Plots.px, titlefontsize=30)
 l = @layout [A{.1h}; grid(3,2) E{.15w}]
 
-#plot(title, t, u, h, z, a, y, size = (2400,2000),layout = l)
 plot(title, z, t, a, u, y, h, legend, size = (2400,2000),layout = l)
