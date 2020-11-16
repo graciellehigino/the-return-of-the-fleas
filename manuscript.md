@@ -288,7 +288,8 @@ the north - occupying a diverse range of environments - and two other groups
 restricted to latitudes under 60° ([@fig:threeB]).
 
 ![Spatial distribution of beta-diversity metrics. The groups detected in fig. 1 are also geographically distinguished](figures/fig3A.png){#fig:threeA}  
-![Spatial distribution PCD components. Again, a distinct PCDc cluster (as seen on the third map of the left column) matches the cluster for which *$\beta$s* metric is more important.](figures/fig3B.png){#fig:threeB}  
+
+![Spatial distribution of PCD components. Again, a distinct PCDc cluster (as seen on the third map of the left column) matches the cluster for which *$\beta$s* metric is more important.](figures/fig3B.png){#fig:threeB}  
 
 ## Conclusion  
 
