@@ -1,5 +1,5 @@
-using Measures
 include("code.jl")
+using Measures
 pal = (
   C1 = RGB(160/255,47/255,37/255),
   C2 = RGB(230/255,159/255,0/255),
