@@ -3,3 +3,22 @@ dist/
 *synctex*
 references.json
 affiliations.json
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# Datasources
+*.zip
+*.rar
+*.csv
+/_MACOSX
+*.txt
+*.xml
+/wc0.5
+*.tiff
+*.grd
+*.gri
+*.vrt
+/data/raw
+/assets
