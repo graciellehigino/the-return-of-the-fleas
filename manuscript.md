@@ -101,7 +101,7 @@ individuals of 121 species, 1,692,000 individuals from 206 flea species that
 occurred in those mammals, and the interactions between them
 [@Hadfield2013DatTal]. Original data is available at Data Dryad
 (<http://dx.doi.org/10.5061/dryad.jf3tj>) and interaction data is available at
-`mangal` database (<http://mangal.io>; @Poisot2016ManMak].
+`mangal` database (<http://mangal.io>; @Poisot2016ManMak).
 
 The authors also used molecular and morphological traits of species to retrieve
 the phylogenetic relationships between species. We used the resulting trees to
@@ -118,17 +118,17 @@ and hosts.
 Networks beta-diversity indexes are composed by their characteristics on species
 composition and interactions both on local and regional networks
 [@Poisot2012DisSpe]. Here we assessed three indexes that summarize these
-information in different ways:
+information in different ways:  
 1. *$\beta$s*: this index corresponds to the differences on species composition
 between networks. A high $\beta$s means solely a high species turnover
-[@Koleff2003MeaBet].
+[@Koleff2003MeaBet].  
 2. *$\beta$os*: this index represents the differences on interactions between shared
 species. It is the component of networks dissimilarity only related to
-interactions, not species identity [@Canard2014EmpEva].
+interactions, not species identity [@Canard2014EmpEva].  
 3. *$\beta$wn*: this summarizes the global differences between all networks in a
 metaweb. It has two components: the difference in interactions between shared
 species (*$\beta$os*) and the difference in interactions due to species turnover
-[@Canard2014EmpEva]. Therefore, *$\beta$os* can not assume values higher than *$\beta$wn*.
+[@Canard2014EmpEva]. Therefore, *$\beta$os* can not assume values higher than *$\beta$wn*.  
 
 These measures were calculated using the `EcologicalNetworks.jl` and `mangal.jl`
 modules in Julia [@Poisot2019EcoNet; @Bezanson2017JulFre] and summarized with
@@ -243,17 +243,16 @@ values of *$\beta$wn* and high values of *$\beta$s*, they are probably a somewha
 group of networks that frequently exchange species between them, but rarely do
 so with more distant communities.
 
-![](figures/fig2A.png){#fig:twoA}  
+![Effects of the compositional element of phylogenetic diversity dissimilarity
+on network betadiversity for both hosts (left) and parasites (right). The
+colours correspond to the groups described on fig. 1. Networks with higher
+values of PCDc are taxonomically more distinct and therefore have higher values
+of *$\beta$s* and lower values of *$\beta$os* because they do not share many
+species.](figures/fig2A.png){#fig:twoA}  
 
-![](figures/fig2B.png){#fig:twoB}  
+![Effects of the phylogenetic component of the phylogenetic diversity dissimilarity on network betadiversity for both hosts (left) and parasites (right). The colours correspond to the groups described on fig. 1. Networks with higher values of PCDp are phylogenetically more distinct, and therefore have lower values of *$\beta$os* (because they do not share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less distinguished on this aspect, but usually have lower values of PCDp.](figures/fig2B.png){#fig:twoB}  
 
-Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
-phylogenetic diversity dissimilarity on network betadiversity for both parasites
-and hosts. The colours correspond to the groups described on [@fig:one]. Networks
-with higher values of PCDp are phylogenetically more distinct, have more unique
-sets of species and therefore have lower values of *$\beta$os* (because they do not
-share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less
-distinguished on this aspect, but usually have lower values of PCDp.
+Fig. 02 -
 
 #### The separation of communities by components of beta-diversity was also observed geographically  
 
