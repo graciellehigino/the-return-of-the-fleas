@@ -144,7 +144,8 @@ allowed us to investigate how they co-vary among networks.
 
 ## Results
 
-#### Communities can be clearly grouped according to network betadiversity.
+#### Communities can be clearly grouped according to network betadiversity.  
+
 The dissimilarity of networks is not described in the same way for local
 networks across a metacommunity. Because of particular characteristics such as
 communities' species composition and relationship with local environment, the
@@ -156,7 +157,7 @@ their interactions dissimilarity decomposition.
 The first two axes of the Principal Component Analysis performed on the network
 beta-diversity indexes, which explain 95.5% of the variation of the data,
 separates the 50 networks (those with corresponding species in the phylogenetic
-trees) in those that have more similar *$\beta$s*, *$\beta$os* and *$\beta$wn* values [@fig:one].
+trees) in those that have more similar *$\beta$s*, *$\beta$os* and *$\beta$wn* values ([@fig:one]).
 This separation is more explicit between *$\beta$s* and *$\beta$wn*, and more diffuse for
 *$\beta$os*, which is aligned to the assumption that *$\beta$s* and *$\beta$wn* are only
 indirectly related, while *$\beta$os* have a more proximate relationship both with
@@ -172,7 +173,7 @@ dissimilarity (PCDc) can be interpreted in the same way, a Principal Component
 Analysis of PCDc would provide a closer look to the *$\beta$s* metric. Our results
 suggest that, from a species composition point of view, hosts communities can be
 described in three main groups, while parasites communities are much more
-similar across the metaweb (@fig:one D and @fig:one E). The diversity of fleas
+similar across the metaweb ([@fig:one] D and [@fig:one] E). The diversity of fleas
 can be much more uniform in space because it is common that a single host
 interacts with more than one species of parasites. In this particular case, only
 a few fleas communities have a distinguished species composition and can be
@@ -196,9 +197,10 @@ metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic compone
 for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
 for fleas (D) and rodents (E).](figures/fig1.png){#fig:one}  
 
-#### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).
+#### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).  
+
 As expected, _$\beta$s_ and PCDc are proxies for each other both for hosts and
-parasites, while PCDc is inversely correlated with _$\beta$wn_ [@fig:twoA].
+parasites, while PCDc is inversely correlated with _$\beta$wn_ ([@fig:twoA]).
 Communities with a high _$\beta$s_ value are very different from those around them,
 and the change in species composition could also represent a shift in the links
 inside these networks either becausen new species will probably explore
@@ -208,7 +210,7 @@ represented by _$\beta$os_, and its relationship with both PCDc and PCDp is high
 variable (Fig. 2B and Fig. 3B).  
 
 Because any change in species composition highly affects phylogenetic diversity,
-_$\beta$s_ is also positively correlated with PCDp [@fig:twoB]. Communities with high
+_$\beta$s_ is also positively correlated with PCDp ([@fig:twoB]). Communities with high
 values for any of those metrics are located in regions with expected higher
 biodiversity (Fig. 3A and Fig. 3B), and this may indicate that the
 biogeographical history of these communities are more related to migration than
@@ -232,7 +234,7 @@ through competition.
 lengths) the species turnover may have been a result of invasion and migration,
 which may lead to opportunistic interactions.
 
-This is also illustrated in Figures @fig:twoA and @fig:twoB on scatterplots of
+This is also illustrated in [@fig:twoA] and [@fig:twoB] on scatterplots of
 *$\beta$os* vs. PCD: networks that differ little in phylogenies have a broader range
 of values of *$\beta$os*, while highly phylogenetically distinct newtorks only have
 very low values of *$\beta$os*. This means that the few species that are shared
@@ -247,16 +249,17 @@ so with more distant communities.
 
 Fig. 02 - Effects of the compositional (A) and phylogenetic (B) elements of
 phylogenetic diversity dissimilarity on network betadiversity for both parasites
-and hosts. The colours correspond to the groups described on @fig:one. Networks
+and hosts. The colours correspond to the groups described on [@fig:one]. Networks
 with higher values of PCDp are phylogenetically more distinct, have more unique
 sets of species and therefore have lower values of *$\beta$os* (because they do not
 share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less
 distinguished on this aspect, but usually have lower values of PCDp.
 
-#### The separation of communities by components of beta-diversity was also observed geographically
+#### The separation of communities by components of beta-diversity was also observed geographically  
+
 There is a clear gradual transition between networks that were better described
 by turnover of species, clustered in central south Eurasia, to those more unique
-compared to the metaweb, spread in the north [@fig:threeA]. The regional species
+compared to the metaweb, spread in the north ([@fig:threeA]). The regional species
 pool is expected to be more diverse towards the Equator, and therefore local
 networks have a higher chance to have different species composition, which
 results in a strong contribution of *$\beta$s* for networks betadiversity. Because of
@@ -268,7 +271,7 @@ species. They start to "unpack" and establish interactions with other remaining
 species, and therefore the *$\beta$os* component of betadiversity explains better why
 networks are different. The third group of networks, characterized by a high
 value of *$\beta$wn*, is also composed by phylogenetically similar communities (as
-seen in @fig:twoB). Because the species richness is even lower, any change in
+seen in [@fig:twoB]). Because the species richness is even lower, any change in
 composition can have a high impact on interactions. Therefore, the *$\beta$os*
 component is still very important, but now differences in interactions due to
 species turnover contribute much more to networks' betadiversity.
@@ -276,15 +279,15 @@ species turnover contribute much more to networks' betadiversity.
 The phylogenetic community dissimilarity of networks was also geographically
 grouped, and in the region where *$\beta$s* was more important, there was a very
 distinguished group for both fleas' and rodents' phylogenetic dissimilarity
-[@fig:threeB]. The two other groups are differently arranged in space: PCDc
+([@fig:threeB]). The two other groups are differently arranged in space: PCDc
 groups have a similar latitudinal distribution, but different longitudinal
 ranges, while PCDp groups are the opposite. This distribution of phylogenetic
 groups highlight the uniqueness of the southern-central set of communities,
 which suggests historical isolation of species. Additionally, the purely
 phylogenetic component of PCD reinforces the geographic distribution of
-betadiversity metrics as seen in @fig:threeA, with one group largely spread in
+betadiversity metrics as seen in [@fig:threeA], with one group largely spread in
 the north - occupying a diverse range of environments - and two other groups
-restricted to latitudes under 60° [@fig:threeB].
+restricted to latitudes under 60° ([@fig:threeB]).
 
 ![](figures/fig3A.png){#fig:threeA}  
 ![](figures/fig3B.png){#fig:threeB}  
@@ -292,7 +295,8 @@ Fig 03 - Spatial distribution of beta-diversity metrics (A) and PCD components
 (B). Again, a distinct PCDc cluster (as seen on the third map of the left
 column) matches the cluster for which *$\beta$s* metric is more important.
 
-## Conclusion
+## Conclusion  
+
 The conspicuous association - both numerical and geographical - between the
 evolutive history of species and networks' betadiversity properties clarifies
 important aspects of the biogeography of hosts and parasites communities in
@@ -310,7 +314,7 @@ way within groups, this result seems to reinforce previous findings that there
 is no co-phylogenetic matching between regional and local networks
 [@Poisot2018IntReta]. If networks co-varied in continental scale in the same way
 they co-vary in local scale, our analyses would not detect the groups
-illustrated in @fig:threeB.
+illustrated in [@fig:threeB].
 
 Finally, this paper highlights how betadiversity and phylogenetic dissimilarity
 are related to each other, and sheds light on the possibility that they interact
