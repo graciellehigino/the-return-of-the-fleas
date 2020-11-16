@@ -140,8 +140,7 @@ differences between networks considering each of the indexes described above. In
 order to use these matrices on the following analyses as a single variable, we
 performed a PCA on each matrix and selected the first component of each. A
 subsequent PCA and *kmeans* analysis on a combined matrix of these variables
-allowed us to investigate how they co-vary among networks. All analyses are
-available at [HERE].
+allowed us to investigate how they co-vary among networks.
 
 ## Results
 
