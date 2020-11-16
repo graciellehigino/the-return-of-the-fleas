@@ -225,14 +225,14 @@ relation to the metaweb - are also phylogenetically similar, varying always
 inside a limited range of small dissimilarity (both with PCDc and PCDp). Because
 these communities also have low values of *$\beta$s*, indicating less frequent species
 turnover, this dissimilarity is due to different links between shared species.
-This result may reflect two possible scenarios:
+This result may reflect two possible scenarios:  
 1. In similar communities with low phylogenetic diversity (shorter branch
 lengths) the turnover of species could be adding very ecologically similar
 lineages, which leads to different interactions to prevent local extinction
-through competition.
+through competition.  
 2. In similar communities with high phylogenetic diversity (longer branch
 lengths) the species turnover may have been a result of invasion and migration,
-which may lead to opportunistic interactions.
+which may lead to opportunistic interactions.  
 
 This is also illustrated in [@fig:twoA] and [@fig:twoB] on scatterplots of
 *$\beta$os* vs. PCD: networks that differ little in phylogenies have a broader range
@@ -252,7 +252,6 @@ species.](figures/fig2A.png){#fig:twoA}
 
 ![Effects of the phylogenetic component of the phylogenetic diversity dissimilarity on network betadiversity for both hosts (left) and parasites (right). The colours correspond to the groups described on fig. 1. Networks with higher values of PCDp are phylogenetically more distinct, and therefore have lower values of *$\beta$os* (because they do not share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less distinguished on this aspect, but usually have lower values of PCDp.](figures/fig2B.png){#fig:twoB}  
 
-Fig. 02 -
 
 #### The separation of communities by components of beta-diversity was also observed geographically  
 
@@ -288,11 +287,8 @@ betadiversity metrics as seen in [@fig:threeA], with one group largely spread in
 the north - occupying a diverse range of environments - and two other groups
 restricted to latitudes under 60° ([@fig:threeB]).
 
-![](figures/fig3A.png){#fig:threeA}  
-![](figures/fig3B.png){#fig:threeB}  
-Fig 03 - Spatial distribution of beta-diversity metrics (A) and PCD components
-(B). Again, a distinct PCDc cluster (as seen on the third map of the left
-column) matches the cluster for which *$\beta$s* metric is more important.
+![Spatial distribution of beta-diversity metrics. The groups detected in fig. 1 are also geographically distinguished](figures/fig3A.png){#fig:threeA}  
+![Spatial distribution PCD components. Again, a distinct PCDc cluster (as seen on the third map of the left column) matches the cluster for which *$\beta$s* metric is more important.](figures/fig3B.png){#fig:threeB}  
 
 ## Conclusion  
 
