@@ -84,13 +84,13 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           working_directory: dist
-          root_file: $name-${{ matrix.pdf-version }}.tex
+          root_file: ${{ env.repo_name }}-${{ matrix.pdf-version }}.tex
           args: "-f -interaction=nonstopmode -pdf"
       - name: Cleanup after PDF build
         uses: xu-cheng/latex-action@master
         with:
           working_directory: dist
-          root_file: $name-${{ matrix.pdf-version }}.tex
+          root_file: ${{ env.repo_name }}-${{ matrix.pdf-version }}.tex
           args: "-c"
       - name: Save artifacts
         if: always()
