@@ -57,9 +57,9 @@ jobs:
           pandoc manuscript.md -s -o dist/${{ env.repo_name }}-preprint.tex -F pandoc-crossref --citeproc --bibliography=references.json --metadata-file=metadata.json --metadata-file=affiliations.json --template=.assets/templates/preprint.tex
       - name: Save artifacts
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@master
         with:
-          name: ${{ env.repo_name }}
+          name: ${{ env.name }}
           path: dist
   build:
     name: Build the PDFs
