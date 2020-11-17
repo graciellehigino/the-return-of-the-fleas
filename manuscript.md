@@ -207,12 +207,12 @@ inside these networks either becausen new species will probably explore
 different ranges of ecological niche or because the loss of species would also
 represent a loss of interaction. These changes in links inside networks are
 represented by _$\beta$os_, and its relationship with both PCDc and PCDp is highly
-variable (Fig. 2B and Fig. 3B).  
+variable ([@fig:twoB] and [@fig:threeB]).  
 
 Because any change in species composition highly affects phylogenetic diversity,
 _$\beta$s_ is also positively correlated with PCDp ([@fig:twoB]). Communities with high
 values for any of those metrics are located in regions with expected higher
-biodiversity (Fig. 3A and Fig. 3B), and this may indicate that the
+biodiversity ([@fig:threeA] and [@fig:threeB]), and this may indicate that the
 biogeographical history of these communities are more related to migration than
 diversification of local lineages [@Davies2011PhyDiv]. Therefore, networks with
 high PCDp also represent communities with lower ecological redundancy and higher
