@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Set variables
+        uses: allenevans/set-env@v2.0.0
         shell: bash
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
@@ -72,6 +73,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set variables
         shell: bash
+        uses: allenevans/set-env@v2.0.0
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
       - name: Download dist folder
@@ -106,6 +108,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set variables
         shell: bash
+        uses: allenevans/set-env@v2.0.0
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
       - name: Download dist folder
