@@ -59,6 +59,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v2
         with:
+          name: ${{ repo_name }}
           path: dist
   build:
     name: Build the PDFs
