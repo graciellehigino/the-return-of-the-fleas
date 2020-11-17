@@ -59,7 +59,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@master
         with:
-          name: "${{ env.repo_name }}"
+          name: the-return-of-the-fleas
           path: dist
   build:
     name: Build the PDFs
