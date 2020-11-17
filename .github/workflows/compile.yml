@@ -25,7 +25,7 @@ jobs:
       - name: Set variables
         shell: bash
         run: |
-          echo ::set-env name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2)
+          echo ::name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2) >> $GITHUB_PATH
       - name: Download and install pandoc
         run: |
           wget https://github.com/jgm/pandoc/releases/download/${{ matrix.pandoc-version }}/pandoc-${{ matrix.pandoc-version }}-1-amd64.deb
