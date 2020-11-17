@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: ${{ matrix.python-version }}
+      - uses: allenevans/set-env@v2.0.0
       - name: Set variables
-        uses: allenevans/set-env@v2.0.0
         shell: bash
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
@@ -70,10 +70,9 @@ jobs:
       matrix:
         pdf-version: [preprint, copyedit]
     steps:
-      - uses: actions/checkout@v2
+      - uses: allenevans/set-env@v2.0.0
       - name: Set variables
         shell: bash
-        uses: allenevans/set-env@v2.0.0
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
       - name: Download dist folder
@@ -105,10 +104,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
-      - uses: actions/checkout@v2
+      - uses: allenevans/set-env@v2.0.0
       - name: Set variables
         shell: bash
-        uses: allenevans/set-env@v2.0.0
         run: |
           echo "{name}={repo_name}"$(echo ${{ github.repository }} | cut -d/ -f2)
       - name: Download dist folder
