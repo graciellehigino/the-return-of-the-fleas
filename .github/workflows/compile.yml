@@ -73,7 +73,7 @@ jobs:
       - name: Set variables
         shell: bash
         run: |
-          echo ::set-env name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2)
+          echo ::set-env name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2) >> $GITHUB_ENV
       - name: Download dist folder
         uses: actions/download-artifact@v2
         with:
@@ -107,7 +107,7 @@ jobs:
       - name: Set variables
         shell: bash
         run: |
-          echo ::set-env name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2)
+          echo ::set-env name=repo_name::$(echo ${{ github.repository }} | cut -d/ -f2) >> $GITHUB_ENV
       - name: Download dist folder
         uses: actions/download-artifact@v2
         with:
