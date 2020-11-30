@@ -144,7 +144,7 @@ allowed us to investigate how they co-vary among networks.
 
 ## Results
 
-#### Communities can be clearly grouped according to network betadiversity.  
+### Communities can be clearly grouped according to network betadiversity.  
 
 The dissimilarity of networks is not described in the same way for local
 networks across a metacommunity. Because of particular characteristics such as
@@ -182,11 +182,8 @@ grouped together.
 However, the phylogenetic component of PCD (PCDp) reveals a much more structured
 metacommunity both in hosts and parasites. In fact, they seemed to be grouped in
 the same way, with two groups more similar than a third one. This may be a
-reflex of the biogeographic history of communities, where one group is more
-primitive than the other two. <!--- I wonder if the more distinguished group
-occupies a more particular environmental space. Maybe the communities that are
-more different in the PCDc clusters are gathered in the PCDp because/if they are
-spacially more isolated. --->
+reflex of the biogeographic history of communities, where one group is ancestral
+to the other two.  
 
 ![Principal Component Analysis of networks betadiversity metrics and
 projection of local networks. For the dataset used here, networks are clearly
@@ -197,13 +194,13 @@ metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic compone
 for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
 for fleas (D) and rodents (E).](figures/fig1.png){#fig:one}  
 
-#### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).  
+### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).  
 
 As expected, _$\beta$s_ and PCDc are proxies for each other both for hosts and
 parasites, while PCDc is inversely correlated with _$\beta$wn_ ([@fig:twoA]).
 Communities with a high _$\beta$s_ value are very different from those around them,
 and the change in species composition could also represent a shift in the links
-inside these networks either becausen new species will probably explore
+inside these networks either because new species will probably explore
 different ranges of ecological niche or because the loss of species would also
 represent a loss of interaction. These changes in links inside networks are
 represented by _$\beta$os_, and its relationship with both PCDc and PCDp is highly
@@ -253,7 +250,7 @@ species.](figures/fig2A.png){#fig:twoA}
 ![Effects of the phylogenetic component of the phylogenetic diversity dissimilarity on network betadiversity for both hosts (left) and parasites (right). The colours correspond to the groups described on fig. 1. Networks with higher values of PCDp are phylogenetically more distinct, and therefore have lower values of *$\beta$os* (because they do not share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less distinguished on this aspect, but usually have lower values of PCDp.](figures/fig2B.png){#fig:twoB}  
 
 
-#### The separation of communities by components of beta-diversity was also observed geographically  
+### The separation of communities by components of beta-diversity was also observed geographically  
 
 There is a clear gradual transition between networks that were better described
 by turnover of species, clustered in central south Eurasia, to those more unique
@@ -301,9 +298,10 @@ with the presence of the Ural Mountains. From this point of view, considering
 the longitudinal spread of PCDp, the history of both hosts and parasites seems
 to have a clear path of migration and diversification from south-central Eurasia
 towards the north. This history is also sustained by the metaweb betadiversity
-metrics: even though the Ural Mountains do not play the same part as for PCDc,
-they sum up to the information unveiled by PCDp to describe a very likely
-biogeographic history.
+metrics: with a distinguished *$\beta$s* group at the south of the Ural
+Mountains suggesting higher species richness and common origin, followed towards
+north by gradual changes in interactions and composition, they sum up to the
+information unveiled by PCDp to describe a very likely biogeographic history.  
 
 By describing how the phylogenetic differences between networks vary in the same
 way within groups, this result seems to reinforce previous findings that there
