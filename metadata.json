@@ -1,5 +1,5 @@
 {
-  "title": "The betadiversity and phylogenetic diversity of ecological networks tell complementary stories about the biogeography of hosts and parasites",
+  "title": "The beta-diversity and phylogenetic diversity of ecological networks tell complementary stories about the biogeography of hosts and parasites",
   "license": "CC-BY",
   "language": "en",
   "creators": [
@@ -24,9 +24,9 @@
       "orcid": "0000-0002-0735-5184"
     }
   ],
-  "description": "The betadiversity of interactions between communities not necessarily corresponds to the differences related to their species composition because interactions are much more variable than the occurrence of species. Additionally, the indexes that measure characteristics of ecological networks can also respond to environmental gradients in space and time. We used published data on the parasitism interaction between Soricomorpha and Rodentia in 51 regions of the Palearctic to investigate how betadiversity of networks and phylogenetic diversity are related. The networks could be separated in groups based on the metrics that best described the differences between them, and these groups were also geographically structured. We also found that each network betadiversity index relates in a particular way with phylogenetically community dissimilarity, reinforcing that some of these indexes have a strong phylogenetic component. Our results clarify important aspects of the biogeography of hosts and parasites communities in Eurasia, while suggesting that networks betadiversity and phylogenetic dissimilarity interact with the environment in different ways.",
+  "description": "The beta-diversity of interactions between communities does not necessarily correspond to the differences related to their species composition because interactions show greater variability than species co-occurrence. Additionally, the structure of species interaction networks can itself vary over spatial gradients, thereby adding constraints on the dissimilarity of communities in space. We used published data on the parasitism interaction between Soricomorpha and Rodentia in 51 regions of the Palearctic to investigate how beta-diversity of networks and phylogenetic diversity are related. The networks could be separated in groups based on the metrics that best described the differences between them, and these groups were also geographically structured. We also found that each network beta-diversity index relates in a particular way with phylogenetically community dissimilarity, reinforcing that some of these indexes have a strong phylogenetic component. Our results clarify important aspects of the biogeography of hosts and parasites communities in Eurasia, while suggesting that networks beta-diversity and phylogenetic dissimilarity interact with the environment in different ways.",
   "keywords": [
-    "betadiversity",
+    "beta-diversity",
     "biogeography",
     "ecological networks",
     "phylogenetic diversity"
