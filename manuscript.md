@@ -249,13 +249,13 @@ conserved also when species are replaced, like when two species that are
 phylogenetically distant replace each other in the same ecological function.
 
 ![Effects of the compositional element of phylogenetic diversity dissimilarity
-on network beta-diversity for both hosts (left) and parasites (right). The
+on network beta-diversity for both parasites (left) and hosts (right). The
 colours correspond to the groups described on fig. 1. Networks with higher
 values of PCDc are taxonomically more distinct and therefore have higher values
 of *$\beta$s* and lower values of *$\beta$os* because they do not share many
 species.](figures/fig2A.png){#fig:twoA}  
 
-![Effects of the phylogenetic component of the phylogenetic diversity dissimilarity on network beta-diversity for both hosts (left) and parasites (right). The colours correspond to the groups described on fig. 1. Networks with higher values of PCDp are phylogenetically more distinct, and therefore have lower values of *$\beta$os* (because they do not share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less distinguished on this aspect, but usually have lower values of PCDp.](figures/fig2B.png){#fig:twoB}  
+![Effects of the phylogenetic component of the phylogenetic diversity dissimilarity on network beta-diversity for both parasites (left) and hosts (right). The colours correspond to the groups described on fig. 1. Networks with higher values of PCDp are phylogenetically more distinct, and therefore have lower values of *$\beta$os* (because they do not share many species). Networks better represented by *$\beta$wn* and *$\beta$os* are less distinguished on this aspect, but usually have lower values of PCDp.](figures/fig2B.png){#fig:twoB}  
 
 
 ### The separation of communities by components of beta-diversity was also observed geographically  

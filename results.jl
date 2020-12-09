@@ -102,7 +102,7 @@ pal = (
 # Fleas PCDc and βs - kmeans of fleas pcdc
 a = Plots.scatter(fleas_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,1], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, ylabel="\\betas Dissimilarity", guidefontsize=25, dpi=300)
 # Hosts PCDc and βs - kmeans of hosts pcdc
-b = Plots.scatter(hosts_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,2], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, dpi=300)
+b = Plots.scatter(hosts_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,2], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:bottomright, label = ["\\betawn" "\\betaos" "\\betas"], legendfont=18, dpi=300)
 
 # Fleas PCDc vs. βos
 c = Plots.scatter(fleas_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,3], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, ylabel="\\betaos Dissimilarity", guidefontsize=25)
@@ -114,11 +114,11 @@ e = Plots.scatter(fleas_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,4], groups=kc.v
 # Hosts PCDc vs. βwn
 g = Plots.scatter(hosts_pcdc_pca.vals[5][:,1], hp_beta_pca_mat[:,4], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, xlabel="PCDc rodents", guidefontsize=25)
 
-legend = Plots.plot([0 0 0], title = "K-means \n groups", titlefontsize=20, legendfont=18, color = [pal.C1 pal.C2 pal.C3], showaxis = false, grid = false, label = ["\\betawn" "\\betaos" "\\betas"])
-title = Plots.plot(title = "(A) Effect of compositional community dissimilarity (PCDc) of fleas (right) and rodents (left) \n on network betadiversity, grouped by kmeans of betadiversity variables", grid = false, showaxis = false, bottom_margin = -150Plots.px, titlefontsize=30)
-l = @layout [A{.1h}; Plots.grid(3,2) E{.15w}]
+#legend = Plots.plot([0 0 0], title = "K-means \n groups", titlefontsize=20, legendfont=18, color = [pal.C1 pal.C2 pal.C3], showaxis = false, grid = false, label = ["\\betawn" "\\betaos" "\\betas"])
+title = Plots.plot(title = "(A) Effect of compositional community dissimilarity (PCDc) of fleas (left) and rodents (right) \n on network betadiversity, grouped by kmeans of betadiversity variables", grid = false, showaxis = false, bottom_margin = -150Plots.px, titlefontsize=30)
+l = @layout [A{.1h}; Plots.grid(3,2)]
 
-p = Plots.plot(title, a, b, c, d, e, g, legend, size = (2024,2024), layout = l)
+p = Plots.plot(title, a, b, c, d, e, g, size = (2024,2024), layout = l)
 display(p)
 
 
@@ -126,7 +126,7 @@ display(p)
 # Fleas PCDp and Bs - kmeans of fleas pcdc
 a = Plots.scatter(fleas_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,1], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, ylabel="\\betas Dissimilarity", guidefontsize=25, dpi=300)
 # Hosts PCDp and βs - kmeans of hosts pcdc
-b = Plots.scatter(hosts_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,2], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, dpi=300)
+b = Plots.scatter(hosts_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,2], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:bottomright, label = ["\\betawn" "\\betaos" "\\betas"], legendfont=18, dpi=300)
 
 # Fleas PCDp vs. βos
 c = Plots.scatter(fleas_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,3], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, ylabel="\\betaos Dissimilarity", guidefontsize=25)
@@ -138,11 +138,11 @@ e = Plots.scatter(fleas_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,4], groups=kc.v
 # Hosts PCDp vs. βwn
 g = Plots.scatter(hosts_pcdp_pca.vals[5][:,1], hp_beta_pca_mat[:,4], groups=kc.vals[1], color = [pal.C1 pal.C2 pal.C3], ms=5, markerstrokewidth=0, xlim = [-8,9], ylim = [-2.5, 2.5], margin=20mm, legend=:none, xlabel="PCDp rodents", guidefontsize=25)
 
-legend = Plots.plot([0 0 0], title = "K-means \n groups", titlefontsize=20, legendfont=18, color = [pal.C1 pal.C2 pal.C3], showaxis = false, grid = false, label = ["\\betawn" "\\betaos" "\\betas"])
+#legend = Plots.plot([0 0 0], title = "K-means \n groups", titlefontsize=20, legendfont=18, color = [pal.C1 pal.C2 pal.C3], showaxis = false, grid = false, label = ["\\betawn" "\\betaos" "\\betas"])
 title = Plots.plot(title = "(B) Effect of phylogenetic community dissimilarity (PCDp) of fleas (left) and rodents (right) \n on network betadiversity, grouped by kmeans of betadiversity variables", grid = false, showaxis = false, bottom_margin = -150Plots.px, titlefontsize=30)
-l = @layout [A{.1h}; Plots.grid(3,2) E{.15w}]
+l = @layout [A{.1h}; Plots.grid(3,2)]
 
-p = Plots.plot(title, a, b, c, d, e, g, legend, size = (2024,2024), layout = l)
+p = Plots.plot(title, a, b, c, d, e, g, size = (2024,2024), layout = l)
 display(p)
 
 ### Fig 03 - Map
