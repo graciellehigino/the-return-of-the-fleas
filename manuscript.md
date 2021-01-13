@@ -87,14 +87,14 @@ communities.
 ## Methods
 
 We used the Hadfield et al. [-@Hadfield2014TalTwo] data on the parasitism
-interaction between Soricomorpha and Rodentia in 51 regions of the Palearctic to
-investigate how beta-diversity of networks and phylogenetic diversity are
-related. This publication gathers occurrence records of 536,000 mammal
-individuals of 121 species, 1,692,000 individuals from 206 flea species that
-occurred in those mammals, and the interactions between them
+interaction between fleas and small mammals (Soricomorpha and Rodentia) in 51
+regions of the Palearctic to investigate how beta-diversity of networks and
+phylogenetic diversity are related. This publication gathers occurrence records
+of 536,000 mammal individuals of 121 species, 1,692,000 individuals from 206
+flea species that occurred in those mammals, and the interactions between them
 [@Hadfield2013DatTal]. Original data is available at Data Dryad
 (<http://dx.doi.org/10.5061/dryad.jf3tj>) and interaction data is available at
-`mangal` database (<http://mangal.io>).
+`mangal` database (<http://mangal.io>).  
 
 The authors also used molecular and morphological traits of species to retrieve
 the phylogenetic relationships between species. We used the resulting trees to
@@ -188,8 +188,8 @@ described by three dimensions of beta-diversity: while *$\beta$s* captures part 
 variation that is complementary to that captured by *$\beta$wn*, *$\beta$os* describes a
 completly different dimension of the data. (A) PCA of networks beta-diversity
 metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic component of PCD (PCDp)
-for fleas (B) and rodents (C); PCA of the compositional component of PCD (PCDc)
-for fleas (D) and rodents (E).](figures/fig1.png){#fig:one}  
+for parasites (B) and hosts (C); PCA of the compositional component of PCD (PCDc)
+for parasites (D) and hosts (E).](figures/fig1.png){#fig:one}  
 
 ### Each beta-diversity index relates in a particular way with phylogenetically community dissimilarity (PCD).  
 
@@ -272,7 +272,7 @@ species turnover contribute much more to networks' beta-diversity.
 
 The phylogenetic community dissimilarity of networks was also geographically
 grouped, and in the region where *$\beta$s* was more important, there was a very
-distinguished group for both fleas' and rodents' phylogenetic dissimilarity
+distinguished group for both fleas' and mammals' phylogenetic dissimilarity
 ([@fig:threeB]). The two other groups are differently arranged in space: PCDc
 groups have a similar latitudinal distribution, but different longitudinal
 ranges, while PCDp groups are the opposite. This distribution of phylogenetic
