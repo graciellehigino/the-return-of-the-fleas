@@ -8,36 +8,31 @@ Ecological networks are complex units that incorporate many aspects of the
 biodiversity multidimensional fabric, such as species identity, interactions,
 and shared coevolutionary history. Because of that, investigating the
 biodiversity and the biogeography of communities through species interactions
-can be highly informative. A local network carries biogeographical and
+can be highly informative. Local networks carry biogeographical and
 historical characteristics of the regional pool of species and interactions,
-given that it is a subset of a regional metaweb [@Holt2002FooWeb]. However, some
+given that they are subsets of a regional metaweb [@Holt2002FooWeb]. However, some
 of these characteristics (such as the phylogenetic signal of interactions
 [@Desdevises2015ComAna; @Krasnov2015PhySig]) can be lost or modified in
 different ways due to the environmental filtering that occurs in the community
 formation process, resulting in a non-correlative variation of ecological
 networks components [@Poisot2018IntRet; @Poisot2016StrPro].  
 
-The differences between ecological interactions, in turn, are more prone to
-variability and are always equal or greater than the differences in species
-composition, and, therefore, are more informative than the number of species or
-functional diversity alone [@Poisot2017HosPar]. This is because ecological
-interactions are conditional to characteristics of the occurrence of two or more
-given species. For instance, the probability of interaction may be modified by
-environmental changes that affect the metabolic rate of organisms
-[@Rall2012UniTem], by changes in their habitats [@Tylianakis2017EcoNet] or by
-community's phylogenetic structure [@Coelho2017NeuBio] – which, in turn, varies
-with the abundance and specialization of species involved [@Canard2014EmpEva;
-@Tylianakis2017EcoNet]. Additionally, environmental conditions also have direct
-effects over the reproductive success of species, changing their populational
-parameters (such as birth and death rates). In this sense, environmental
-gradients can change the frequency of interactions through direct influence on
-species' characteristics and population abundance, which, on the other hand, are
-also affected by interactions [@Poisot2017HosPar]. For example, pathogens can
-develop adaptations that protect them from the immune system of their hosts (an
-example of the effect of an interaction over species' characteristics), or a
-predator can elevate the death rate of its prey population, therefore altering
-its abundance (an example of the effect of an interaction over populations'
-characteristics). Other examples are the effect of the environment on the
+The differences between ecological interactions are more prone to variability
+and are always equal or greater than the differences in species composition,
+and, therefore, are more informative than the number of species or functional
+diversity alone [@Poisot2017HosPar]. This is because ecological interactions are
+conditional to characteristics of the occurrence of two or more given species.
+For instance, the probability of interaction may be modified by environmental
+changes that affect the metabolic rate of organisms [@Rall2012UniTem], by
+changes in their habitats [@Tylianakis2017EcoNet] or by community's phylogenetic
+structure [@Coelho2017NeuBio] – which, in turn, varies with the abundance and
+specialization of species involved [@Canard2014EmpEva; @Tylianakis2017EcoNet].
+Additionally, environmental conditions also have direct effects over the
+reproductive success of species, changing their populational parameters (such as
+birth and death rates). In this sense, environmental gradients can change the
+frequency of interactions through direct influence on species' characteristics
+and population abundance, which, on the other hand, are also affected by
+interactions [@Poisot2017HosPar]. For example, the environment can affect the
 production of secondary metabolites that exert selective pressure on the
 organisms that interact with certain plants [@Muola2010AssPla], how the
 geographical variation of functional characteristics generates changes in the
@@ -45,19 +40,15 @@ interaction network and in species composition [@Konig2014ConRes;
 @CHAMuha2015EmpRes], as well as the substitution of species along environmental
 gradients, variation in reproductive success and in the trophic network, or,
 yet, how the population density regulated by the environment can change the sign
-of an interaction [@Bruder2017BioInt; @Doxford2013SpaTem; @Kaplan2005AphAlt].
-The differences between communities related to interactions may be, but not
-necessarily are, correspondent to those related to their species composition
-[@Poisot2014SpeWhy].
+of an interaction [@Bruder2017BioInt; @Doxford2013SpaTem; @Kaplan2005AphAlt].  
 
-As well as several other biodiversity metrics, the indexes that measure
-characteristics of ecological networks can also respond to environmental
-gradients in space and time [@Baiser2019EcoRul; @Gravel2019BriElt]. For example,
-the speed of climate change can reduce modularity (how much a network is
-partitioned into nuclei of closely connected species) and increase nestedness
-(how much specialist species interact with a subset of species with which
-generalists interact) in pollination networks [@Dalsgaard2013HisCli]. One of
-these indexes that carries important historical information is the phylogenetic
+Because of all independent factors that can determine their occurrence, the
+differences between communities related to interactions may be, but not
+necessarily are, correspondent to those related to their species composition
+[@Poisot2014SpeWhy], and therefore the indexes that measure characteristics of
+ecological networks can also respond to environmental gradients in space and
+time [@Dalsgaard2013HisCli; @Baiser2019EcoRul; @Gravel2019BriElt]. One of these
+indexes that carries important historical information is the phylogenetic
 diversity, measured as the sum of the lengths of the phylogeny branches that
 include all the species that interact in a community. Dispersion and speciation
 events are the main factors that affect the phylogenetic diversity of a network
@@ -74,7 +65,7 @@ impacts of environmental conditions in substituting interactions
 [@Carnicer2009TemDyn], suggesting that functional diversity also plays an
 important role in the stability of ecological networks. Investigating the
 relationship between these characteristics can help us understand why ecological
-networks vary in space.
+networks vary in space.  
 
 Interaction networks between parasites and hosts have great potential to be used
 as study systems in the geographic variation of interactions, especially those
