@@ -4,43 +4,45 @@ bibliography: [references.bib]
 
 ## Introduction
 
-Ecological networks are complex units that incorporate many aspects of the
-biodiversity multidimensional fabric, such as species identity, interactions,
-and shared coevolutionary history. Because of that, investigating the
-biodiversity and the biogeography of communities through species interactions
-can be highly informative. Local networks carry biogeographical and
-historical characteristics of the regional pool of species and interactions,
-given that they are subsets of a regional metaweb [@Holt2002FooWeb]. However, some
-of these characteristics (such as the phylogenetic signal of interactions
-[@Desdevises2015ComAna; @Krasnov2015PhySig]) can be lost or modified in
-different ways due to the environmental filtering that occurs in the community
-formation process, resulting in a non-correlative variation of ecological
-networks components [@Poisot2018IntRet; @Poisot2016StrPro].  
+Ecological networks are complex units that incorporate many threads of the
+fabric of biodiversity, namely species identity, interactions, and shared
+coevolutionary history. Investigating the structure and the biogeography of
+communities through species interactions can therefore be highly informative.
+Local networks carry a record of both biogeographical and historical features of
+the regional pool of species and interactions, as they are subsets of a regional
+metaweb [@Holt2002FooWeb], and so result from the fact that species both
+co-occur and interact. However, some of these characteristics can be lost over
+time, in response to local ecological pressure or random change. This is notably
+true of the co-phylogenetic signal of interactions [@Desdevises2015ComAna;
+@Krasnov2015PhySig], which can be eroded by environmental filtering during
+community assembly. This would result in a non-correlative variation of
+ecological networks components [@Poisot2018IntRet; @Poisot2016StrPro].  
 
-The differences between ecological interactions are more prone to variability
-and are always equal or greater than the differences in species composition,
-and, therefore, are more informative than the number of species or functional
-diversity alone [@Poisot2017HosPar]. This is because ecological interactions are
-conditional to characteristics of the occurrence of two or more given species.
-For instance, the probability of interaction may be modified by environmental
-changes that affect the metabolic rate of organisms [@Rall2012UniTem], by
-changes in their habitats [@Tylianakis2017EcoNet] or by community's phylogenetic
-structure [@Coelho2017NeuBio] – which, in turn, varies with the abundance and
-specialization of species involved [@Canard2014EmpEva; @Tylianakis2017EcoNet].
-Additionally, environmental conditions also have direct effects over the
-reproductive success of species, changing their populational parameters (such as
-birth and death rates). In this sense, environmental gradients can change the
-frequency of interactions through direct influence on species' characteristics
-and population abundance, which, on the other hand, are also affected by
-interactions [@Poisot2017HosPar]. For example, the environment can affect the
-production of secondary metabolites that exert selective pressure on the
-organisms that interact with certain plants [@Muola2010AssPla], how the
-geographical variation of functional characteristics generates changes in the
-interaction network and in species composition [@Konig2014ConRes;
-@CHAMuha2015EmpRes], as well as the substitution of species along environmental
-gradients, variation in reproductive success and in the trophic network, or,
-yet, how the population density regulated by the environment can change the sign
-of an interaction [@Bruder2017BioInt; @Doxford2013SpaTem; @Kaplan2005AphAlt].  
+Dissimilarity of species interactions are always equal to, or greater than, the
+differences in species composition, because there cannot be an interaction
+without the presence of boths partners. Therefore, interactions can be more
+informative than the species richness or functional diversity alone
+[@Poisot2017HosPar]. For instance, the probability of interaction may be
+modified by environmental changes that affect the metabolic rate of organisms
+[@Rall2012UniTem], by changes in their habitats [@Tylianakis2017EcoNet] or by
+community's phylogenetic structure [@Coelho2017NeuBio] – which, in turn, varies
+with the abundance and specialization of species involved [@Canard2014EmpEva;
+@Tylianakis2017EcoNet], but is not captured by looking solely at species
+composition.
+
+Environmental conditions also have direct effects over species fitness. In this
+sense, environmental gradients can change the frequency of interactions through
+direct influence on species' characteristics and population abundance, which, on
+the other hand, are also affected by interactions **Poisot, Stouffer & Gravel
+2015 Oikos**. For example, the environment can affect the production of
+secondary metabolites that exert selective pressure on the organisms that
+interact with certain plants [@Muola2010AssPla], how the geographical variation
+of functional characteristics generates changes in the interaction network and
+in species composition [@Konig2014ConRes; @CHAMuha2015EmpRes], as well as the
+substitution of species along environmental gradients, variation in reproductive
+success and in the trophic network, or, yet, how the population density
+regulated by the environment can change the sign of an interaction
+[@Bruder2017BioInt; @Doxford2013SpaTem; @Kaplan2005AphAlt].  
 
 Because of all independent factors that can determine their occurrence, the
 differences between communities related to interactions may be, but not
@@ -58,31 +60,15 @@ addition of species and may indicate, for example, the extent of impacts caused
 by an invasive species in a community [@Davies2011PhyDiv]. Therefore, beta
 diversity (the difference in the composition of communities) and the
 phylogenetic diversity of interaction networks are related, and both can respond
-to environmental variation in different ways. For example, by acting as an
-"environmental filter", the environment can affect the substitution of species
-by selecting their functional characteristics, and these, in turn, can limit the
-impacts of environmental conditions in substituting interactions
-[@Carnicer2009TemDyn], suggesting that functional diversity also plays an
-important role in the stability of ecological networks. Investigating the
-relationship between these characteristics can help us understand why ecological
-networks vary in space.  
+to environmental variation in different ways.  
 
-Interaction networks between parasites and hosts have great potential to be used
-as study systems in the geographic variation of interactions, especially those
-involving ectoparasites. Because of the particular type of association between
-parasites and hosts, the dissimilarity of these interactions networks reflect
-not only the environmental differences, but also the replacement of the host
-species [@Eriksson2019HosEnv; @Krasnov2005SpaVar; @Poulin2010SimVar].
-Nonetheless, the association between parasites and hosts is often the result of
-the evolutionary history of the groups, and this history can result in a
-non-neutral contribution of these species to the beta diversity of these
-communities [@Poisot2012DisSpe]. Based on a parasite-host system distributed
-over a vast biogeographic region, we identified similar numerical and
-geographical associations between the phylogenetic diversity and the
-dissimilarity of species composition and interactions of ecological networks.
-This result adds to our previous understanding of biodiversity distribution and
-help us tell a more complete story on the biogeography of ecological
-communities.
+Based on a parasite-host system distributed over a vast biogeographic region
+(Eurasia), we identified similar numerical and geographical clusters between the
+phylogenetic diversity and the dissimilarity of species composition and
+interactions of ecological networks. This result adds to our previous
+understanding of biodiversity distribution and help us tell a more complete
+story on the biogeography of ecological communities. Specifically, **add a
+sentence about main findings**.
 
 ## Methods
 
@@ -290,35 +276,52 @@ restricted to latitudes under 60° ([@fig:threeB]).
 ## Conclusion  
 
 The conspicuous association - both numerical and geographical - between the
-evolutive history of species and networks' beta-diversity properties clarifies
-important aspects of the biogeography of hosts and parasites communities in
+evolutionary history of species and networks' beta-diversity properties
+clarifies key aspects of the biogeography of hosts and parasites communities in
 Eurasia. For example, the longitudinal PCDc clusters separation roughly coincide
 with the presence of the Ural Mountains. From this point of view, considering
 the longitudinal spread of PCDp, the history of both hosts and parasites seems
 to have a clear path of migration and diversification from south-central Eurasia
 towards the north. This history is also sustained by the metaweb beta-diversity
-metrics: with a distinguished *$\beta$s* group at the south of the Ural
-Mountains suggesting higher species richness and common origin, followed towards
-north by gradual changes in interactions and composition, they sum up to the
-information unveiled by PCDp to describe a very likely biogeographic history.  
-
-By describing how the phylogenetic differences between networks vary in the same
-way within groups, this result seems to reinforce previous findings that there
-is no co-phylogenetic matching between regional and local networks
+metrics: with a distinctive *$\beta$s* group at the south of the Ural Mountains
+suggesting higher species richness and common origin, followed towards north by
+gradual changes in interactions and composition, they sum up to the information
+unveiled by PCDp to describe a very likely biogeographic history.  By describing
+how the phylogeetic differences between networks vary in the same way within
+groups, this result seems to reinforce previous findings that there is no
+co-phylogenetic matching between regional and local networks
 [@Poisot2018IntRet]. If networks co-varied in continental scale in the same way
 they co-vary in local scale, our analyses would not detect the groups
 illustrated in [@fig:threeB].
 
 Finally, this paper highlights how beta-diversity and phylogenetic dissimilarity
 are related to each other, and sheds light on the possibility that they interact
-with the environment in different ways. While *$\beta$s* seems to be connected to
-environmental uniqueness and geographical barriers, *$\beta$os* and *$\beta$wn* better
-reflect migration processes and evolutive trajectories. As stated at the
-beginning of this text, ecological networks are valuable, multidimensional
-lenses through which we can investigate biodiversity and its history. Although
-we did not account for properties such as phenology and natural history aspects
-of species, we did find that small scale processes such as species interactions
-can be integrated in large scale investigations and can have a stamp in
-macroecological processes.
+with the environment in different ways. While *$\beta$s* seems to be connected
+to environmental uniqueness and geographical barriers, *$\beta$os* and
+*$\beta$wn* better reflect migration processes and evolutive trajectories. As
+stated at the beginning of this text, ecological networks are valuable,
+multidimensional lenses through which we can investigate biodiversity and its
+history. Although we did not account for properties such as phenology and
+natural history aspects of species, we did find that small scale processes such
+as species interactions can be integrated in large scale investigations and can
+have a stamp in macroecological processes.
+
+Interaction networks between parasites and hosts have great potential to be used
+as study systems in the geographic variation of interactions (**Proulx 2005
+Trends Ecol Evol** and **Poulin 2010 Trends in something**). Because of the
+particular type of association between parasites and hosts, the dissimilarity of
+these interactions networks reflect not only the environmental differences, but
+also the replacement of the host species [@Eriksson2019HosEnv;
+@Krasnov2005SpaVar; @Poulin2010SimVar]. Nevertheless, the association between
+parasites and hosts is often the result of the evolutionary history of the
+groups, and this history can result in a non-neutral contribution of these
+species to the beta diversity of these communities [@Poisot2012DisSpe]. The
+underlying logic of our approach pertains to a wide diversity of systems; not
+only do rodents act as reservoirs for zoonotic diseases, **GF Albery, EA Eskew,
+N Ross, KJ Olival. (2020) Nature Communications 11: 2260.** show that
+understanding the global-scale structure of host-virus interactions *requires* a
+joint understanding of the geographical and evolutionary mechanisms involved in
+shaping them. We argue that when the data are available, there is even more
+information to be gained by looking at the way interactions vary.
 
 ## References
