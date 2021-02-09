@@ -72,7 +72,7 @@ sentence about main findings**.
 
 ## Methods
 
-We used the Hadfield et al. [-@Hadfield2014TalTwo] data on the parasitism
+We used the Hadfield et al. [-@Hadfield2014-tw] data on the parasitism
 interaction between fleas and small mammals (Soricomorpha and Rodentia) in 51
 regions of the Palearctic to investigate how beta-diversity of networks and
 phylogenetic diversity are related. This publication gathers occurrence records
@@ -307,8 +307,7 @@ as species interactions can be integrated in large scale investigations and can
 have a stamp in macroecological processes.
 
 Interaction networks between parasites and hosts have great potential to be used
-as study systems in the geographic variation of interactions (**Proulx 2005
-Trends Ecol Evol** and **Poulin 2010 Trends in something**). Because of the
+as study systems in the geographic variation of interactions [@Proulx2005NetThi; @Poulin2010NetAna]. Because of the
 particular type of association between parasites and hosts, the dissimilarity of
 these interactions networks reflect not only the environmental differences, but
 also the replacement of the host species [@Eriksson2019HosEnv;
@@ -317,8 +316,7 @@ parasites and hosts is often the result of the evolutionary history of the
 groups, and this history can result in a non-neutral contribution of these
 species to the beta diversity of these communities [@Poisot2012DisSpe]. The
 underlying logic of our approach pertains to a wide diversity of systems; not
-only do rodents act as reservoirs for zoonotic diseases, **GF Albery, EA Eskew,
-N Ross, KJ Olival. (2020) Nature Communications 11: 2260.** show that
+only do rodents act as reservoirs for zoonotic diseases, -@Albery2020PreGlo show that
 understanding the global-scale structure of host-virus interactions *requires* a
 joint understanding of the geographical and evolutionary mechanisms involved in
 shaping them. We argue that when the data are available, there is even more
