@@ -150,9 +150,9 @@ display(p)
 beta_map = [coordinates kc.vals[1] kc_fleas_pcdp.vals[1] kc_hosts_pcdp.vals[1] kc_fleas_pcdc.vals[1] kc_hosts_pcdc.vals[1]];
 range_map = [(minimum(coordinates[:,1])-15, maximum(coordinates[:,1])+15), (minimum(coordinates[:,2])-5, maximum(coordinates[:,2])+15)];
 using SimpleSDMLayers
-bioclim = SimpleSDMLayers.worldclim(1, resolution = "5");
+bioclim = SimpleSDMLayers.worldclim(1, resolution = 5.0);
 bioclim_copy= Base.similar(bioclim)
-filter(!isnan, bioclim_copy.grid) .= 0
+filter(!isnothing, bioclim_copy.grid) .= 0
 
 # Betadiversity - Fig 3A
 function f(x,n)
@@ -180,15 +180,15 @@ function f(x, g, n)
     return y[:,1], y[:,2]
 end
 
-h = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
+h = heatmap(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
 scatter!(h, f(beta_map, 4, 1), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0) #fleas
 scatter!(h, f(beta_map, 5, 3), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #rodents
 
-t = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
+t = heatmap(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
 scatter!(t, f(beta_map, 4, 2), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #fleas
 scatter!(t, f(beta_map, 5, 1), color = [pal.C2], alpha = 0.7, ms=5, label = "", title="PCDp", titlefontsize=30, markerstrokewidth=0, dpi=300) #rodents
 
-u = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
+u = heatmap!(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
 scatter!(u, f(beta_map, 4, 3), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #fleas
 scatter!(u, f(beta_map, 5, 2), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #rodents
 
