@@ -20,7 +20,7 @@ ecological networks components [@Poisot2018IntRet; @Poisot2016StrPro].
 
 Dissimilarity of species interactions are always equal to, or greater than, the
 differences in species composition, because there cannot be an interaction
-without the presence of boths partners. Therefore, interactions can be more
+without the presence of both partners. Therefore, interactions can be more
 informative than the species richness or functional diversity alone
 [@Poisot2017HosPar]. For instance, the probability of interaction may be
 modified by environmental changes that affect the metabolic rate of organisms
@@ -33,8 +33,8 @@ composition.
 Environmental conditions also have direct effects over species fitness. In this
 sense, environmental gradients can change the frequency of interactions through
 direct influence on species' characteristics and population abundance, which, on
-the other hand, are also affected by interactions **Poisot, Stouffer & Gravel
-2015 Oikos**. For example, the environment can affect the production of
+the other hand, are also affected by interactions [@Poisot2014SpeWhy]. For
+example, the environment can affect the production of
 secondary metabolites that exert selective pressure on the organisms that
 interact with certain plants [@Muola2010AssPla], how the geographical variation
 of functional characteristics generates changes in the interaction network and
@@ -172,7 +172,7 @@ communities, where one group is ancestral to the other two.
 projection of local networks. For the dataset used here, networks are clearly
 described by three dimensions of beta-diversity: while *$\beta$s* captures part of the
 variation that is complementary to that captured by *$\beta$wn*, *$\beta$os* describes a
-completly different dimension of the data. (A) PCA of networks beta-diversity
+completely different dimension of the data. (A) PCA of networks beta-diversity
 metrics _$\beta$s_, _$\beta$wn_ and _$\beta$os_; PCA of the phylogenetic component of PCD (PCDp)
 for parasites (B) and hosts (C); PCA of the compositional component of PCD (PCDc)
 for parasites (D) and hosts (E).](figures/fig1.png){#fig:one}  
