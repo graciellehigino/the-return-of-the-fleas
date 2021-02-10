@@ -67,8 +67,10 @@ Based on a parasite-host system distributed over a vast biogeographic region
 phylogenetic diversity and the dissimilarity of species composition and
 interactions of ecological networks. This result adds to our previous
 understanding of biodiversity distribution and help us tell a more complete
-story on the biogeography of ecological communities. Specifically, **add a
-sentence about main findings**.
+story on the biogeography of ecological communities. Specifically, we have found
+that local networks are characterized by beta-diversity metrics in different
+ways across the metaweb, and these metrics covary with networks' phylogenetic
+diversity.  
 
 ## Methods
 
@@ -169,7 +171,7 @@ alike than group 1. This may be a reflex of the biogeographic history of
 communities, where one group is ancestral to the other two.   
 
 ![Principal Component Analysis of networks beta-diversity metrics and
-projection of local networks. For the dataset used here, networks are clearly
+projection of local networks. For the dataset used here, networks are
 described by three dimensions of beta-diversity: while *$\beta$s* captures part of the
 variation that is complementary to that captured by *$\beta$wn*, *$\beta$os* describes a
 completely different dimension of the data. (A) PCA of networks beta-diversity
@@ -216,7 +218,7 @@ which may lead to opportunistic interactions.
 
 This is also illustrated in [@fig:twoA] and [@fig:twoB] on scatterplots of
 *$\beta$os* vs. PCD: networks that differ little in phylogenies have a broader
-range of values of *$\beta$os*, while highly phylogenetically distinct newtorks
+range of values of *$\beta$os*, while highly phylogenetically distinct networks
 only have very low values of *$\beta$os* - meaning that, for communities with
 high values of PCD, the few species that are shared interact in the same way.
 Additionally, because those same communities also have low values of *$\beta$wn*
@@ -281,13 +283,13 @@ clarifies key aspects of the biogeography of hosts and parasites communities in
 Eurasia. For example, the longitudinal PCDc clusters separation roughly coincide
 with the presence of the Ural Mountains. From this point of view, considering
 the longitudinal spread of PCDp, the history of both hosts and parasites seems
-to have a clear path of migration and diversification from south-central Eurasia
+to follow a path of migration and diversification from south-central Eurasia
 towards the north. This history is also sustained by the metaweb beta-diversity
 metrics: with a distinctive *$\beta$s* group at the south of the Ural Mountains
 suggesting higher species richness and common origin, followed towards north by
 gradual changes in interactions and composition, they sum up to the information
-unveiled by PCDp to describe a very likely biogeographic history.  By describing
-how the phylogeetic differences between networks vary in the same way within
+unveiled by PCDp to describe a very likely biogeographic history. By describing
+how the phylogenetic differences between networks vary in the same way within
 groups, this result seems to reinforce previous findings that there is no
 co-phylogenetic matching between regional and local networks
 [@Poisot2018IntRet]. If networks co-varied in continental scale in the same way
