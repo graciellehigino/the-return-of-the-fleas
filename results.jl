@@ -179,35 +179,98 @@ function f(x, g, n)
     y = x[x[:,g].==n,:]
     return y[:,1], y[:,2]
 end
+using StatsPlots
 
-h = heatmap(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(h, f(beta_map, 4, 1), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0) #fleas
-scatter!(h, f(beta_map, 5, 3), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #rodents
+# Group 1
+h_plot_series = [f(beta_map, 4, 1)[1] f(beta_map, 4, 1)[2]; f(beta_map, 5, 3)[1] f(beta_map, 5, 3)[2]]
 
-t = heatmap(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(t, f(beta_map, 4, 2), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #fleas
-scatter!(t, f(beta_map, 5, 1), color = [pal.C2], alpha = 0.7, ms=5, label = "", title="PCDp", titlefontsize=30, markerstrokewidth=0, dpi=300) #rodents
+h = marginalkde(h_plot_series[:,1], h_plot_series[:,2], size = (980,520), colour = "black")
+h.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(h, range_map[1], subplot=1)
+yaxis!(h, range_map[2], subplot=3)
+plot!(h, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(h, showaxis=false, subplot=1)
+plot!(h, showaxis=false, subplot=3)
 
-u = heatmap!(bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(u, f(beta_map, 4, 3), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #fleas
-scatter!(u, f(beta_map, 5, 2), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300) #rodents
+scatter!(h, f(beta_map, 4, 1), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(h, f(beta_map, 5, 3), color = [pal.C2], marker=:xcross, ms=5, label = "", markerstrokewidth=0, dpi=300, subplot=2) #mammals
+
+# Group 2
+t_plot_series = [f(beta_map, 4, 2)[1] f(beta_map, 4, 2)[2]; f(beta_map, 5, 1)[1] f(beta_map, 5, 1)[2]]
+
+t = marginalkde(t_plot_series[:,1], t_plot_series[:,2], size = (980,520), colour = "black")
+t.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(t, range_map[1], subplot=1)
+yaxis!(t, range_map[2], subplot=3)
+plot!(t, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(t, showaxis=false, subplot=1, title = "PCDp")
+plot!(t, showaxis=false, subplot=3)
+
+scatter!(t, f(beta_map, 4, 2), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(t, f(beta_map, 5, 1), color = [pal.C2], marker=:xcross, ms=5, label = "", markerstrokewidth=0, dpi=300, subplot=2) #mammals
+
+# Group 3
+u_plot_series = [f(beta_map, 4, 3)[1] f(beta_map, 4, 3)[2]; f(beta_map, 5, 2)[1] f(beta_map, 5, 2)[2]]
+
+u = marginalkde(u_plot_series[:,1], u_plot_series[:,2], size = (980,520), colour = "black")
+u.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(u, range_map[1], subplot=1)
+yaxis!(u, range_map[2], subplot=3)
+plot!(u, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(u, showaxis=false, subplot=1)
+plot!(u, showaxis=false, subplot=3)
+
+scatter!(u, f(beta_map, 4, 3), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(u, f(beta_map, 5, 2), color = [pal.C2], marker=:xcross, ms=5, label = "", markerstrokewidth=0, dpi=300, subplot=2) #mammals
 
 
 #---PCDc MAPS ---
+# Group 1
+y_plot_series = [f(beta_map, 6, 1)[1] f(beta_map, 6, 1)[2]; f(beta_map, 7, 3)[1] f(beta_map, 7, 3)[2]]
 
-y = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(y, f(beta_map, 6, 1), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300)
-scatter!(y, f(beta_map, 7, 3), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300)
-z = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(z, f(beta_map, 6, 2), color = [pal.C3], alpha = 0.7, ms=5, label = "", title="PCDc", titlefontsize=30, markerstrokewidth=0, dpi=300)
-scatter!(z, f(beta_map, 7, 1), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300)
+y = marginalkde(y_plot_series[:,1], y_plot_series[:,2], size = (980,520), colour = "black")
+y.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(y, range_map[1], subplot=1)
+yaxis!(y, range_map[2], subplot=3)
+plot!(y, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(y, showaxis=false, subplot=1)
+plot!(y, showaxis=false, subplot=3)
 
-a = heatmap(bioclim_copy[range_map[1], range_map[2]], c=:amp, aspectratio=92.60/60.75)
-scatter!(a, f(beta_map, 6, 3), color = [pal.C3], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300)
-scatter!(a, f(beta_map, 7, 2), color = [pal.C2], alpha = 0.7, ms=5, label = "", markerstrokewidth=0, dpi=300)
+scatter!(y, f(beta_map, 6, 1), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(y, f(beta_map, 7, 3), color = [pal.C2], marker=:xcross, ms=5, label = "", markerstrokewidth=0, dpi=300, subplot=2) #mammals
 
-legend = Plots.plot([0 0], legendfont=18, color = [pal.C3 pal.C2], showaxis = false, grid = false, label = ["Parasites" "Hosts"])
-title = plot(title = "(B) Spatial distribution of PCD components clusters for hosts and parasites", grid = false, showaxis = false, bottom_margin = -50Plots.px, titlefontsize=30)
+#Group 2
+z_plot_series = [f(beta_map, 6, 2)[1] f(beta_map, 6, 2)[2]; f(beta_map, 7, 1)[1] f(beta_map, 7, 1)[2]]
+
+z = marginalkde(z_plot_series[:,1], z_plot_series[:,2], size = (980,520), colour = "black")
+z.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(z, range_map[1], subplot=1)
+yaxis!(z, range_map[2], subplot=3)
+plot!(z, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(z, showaxis=false, subplot=1, title = "PCDc")
+plot!(z, showaxis=false, subplot=3)
+
+scatter!(z, f(beta_map, 6, 2), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(z, f(beta_map, 7, 1), color = [pal.C2], marker=:xcross, ms=5, label = "", markerstrokewidth=0, dpi=300, subplot=2) #mammals
+
+
+#Group 3
+a_plot_series = [f(beta_map, 6, 3)[1] f(beta_map, 6, 3)[2]; f(beta_map, 7, 2)[1] f(beta_map, 7, 2)[2]]
+
+a = marginalkde(a_plot_series[:,1], a_plot_series[:,2], size = (980,520), colour = "black")
+a.subplots[2].series_list[1][:linecolor] = RGBA{Float64}(1.0,1.0,1.0)
+xaxis!(a, range_map[1], subplot=1)
+yaxis!(a, range_map[2], subplot=3)
+plot!(a, bioclim_copy[left=range_map[1][1],right=range_map[1][2], bottom=range_map[2][1], top=range_map[2][2]], c=:amp, subplot=2, aspectratio=:auto)
+plot!(a, showaxis=false, subplot=1)
+plot!(a, showaxis=false, subplot=3)
+
+scatter!(a, f(beta_map, 6, 3), color = [pal.C3], ms=5, label = "", markerstrokewidth=0, subplot=2) #fleas
+scatter!(a, f(beta_map, 7, 2), color = [pal.C2], marker=:xcross, ms=5, label = "", dpi=300, subplot=2) #mammals
+
+# final plot
+legend = Plots.scatter([0 0], marker=[:circle :xcross], markerstrokewidth=0, legendfont=18, color = [pal.C3 pal.C2], foreground_color_legend = nothing, showaxis = false, grid = false, label = ["Parasites" "Hosts"])
+title = plot(title = "Spatial distribution of PCD components clusters for hosts and parasites", grid = false, showaxis = false, bottom_margin = -50Plots.px, titlefontsize=30)
 l = @layout [A{.1h}; grid(3,2) E{.15w}]
 
 plot(title, z, t, a, u, y, h, legend, size = (2400,2000),layout = l)
